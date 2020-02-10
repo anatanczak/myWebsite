@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+
 }
 
 *,
@@ -10,30 +11,33 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bdc2d5;
 }
 
 /* Page Accueil */
 /* Nav bar and dropdown menu */
-.nav-bar {
+.nav-bar-main-menu {
+  list-style: none;
   display: flex;
 }
-
-.nav-item {
-  padding: 2%;
-}
-
-.dropdown-cv {
-  padding: 2%;
+.nav-bar-submenu {
+  list-style: none;
   display: flex;
   flex-direction: column;
 }
 
-.dropdown-cv-content {
-  display: none;
-
+.nav-item {
+  width: 20%;
 }
 
-a:hover {
-  display: block;
+.nav-link {
+  padding: 2%;
+  text-decoration: none;
+  color: #fbfafa;
+}
+
+.nav-bar a:hover {
   background-color: brown;
 }
