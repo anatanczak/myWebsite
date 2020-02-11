@@ -18,26 +18,65 @@ body {
 
 /* Page Accueil */
 /* Nav bar and dropdown menu */
-.nav-bar-main-menu {
+
+
+/* general style of the main list of links and the dropdown menu*/
+.nav-bar, .dropdown-list {
   list-style: none;
+  margin: 0.5% 0;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
-.nav-bar-submenu {
-  list-style: none;
+/* style list items*/
+.nav-bar li {
+  width: 12.5%;
+}
+
+/* style links */
+.nav-bar a {
+  text-transform: uppercase;
+   display: block;
+   padding: 5%;
+   color: #fbfafa;
+   text-decoration: none;
+   text-align: center;
+}
+
+/* change text color when hover over menu items */
+.nav-bar a:hover {
+color: #1D212E;
+}
+
+/* make dropdown menu disappear */
+.nav-bar li > ul{
+display: none;
+}
+/* make dropdown menu appear when hover over */
+.nav-bar li:hover > ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.dropdown-list li {
+  width: 100%;
 }
 
-.nav-item {
-  width: 20%;
-}
 
-.nav-link {
-  padding: 2%;
-  text-decoration: none;
-  color: #fbfafa;
-}
 
-.nav-bar a:hover {
-  background-color: brown;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end */
