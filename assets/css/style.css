@@ -16,7 +16,6 @@ body {
   padding: 0;
 }
 
-/* Page Accueil */
 /* Fontsize for large screens */
 /* Nav bar and dropdown menu */
 /* general style of the main list of links and the dropdown menu*/
@@ -77,7 +76,42 @@ body {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+/* ------------------------------------HOMEPAGE----------------------------------- */
+/* Home page general css */
 
+/* MOVE SOME STUFF SUCH AS SPACE-BETWEEN TO LARGE SCREENS */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+padding: 0 3%;
+}
+
+.title-wrapper {
+text-align: center;
+}
+
+.name {
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+}
+
+.decorative-line{
+height: 5px;
+}
+
+.job-title{
+  color: #654c6b;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+}
+
+
+
+/* -----------------------------------Font Break Point------------------------------ */
 /* Less than 1400 */
 @media only screen and (max-width: 1400px) {
   .link {
@@ -87,8 +121,28 @@ body {
   .submenu-link {
     font-size: 1.175rem;
   }
+
+
+  .name {
+    font-size: 2.7rem;
+    letter-spacing: 0.8rem;
+  }
+
+  .decorative-line{
+  height: 4px;
+  }
+
+  .job-title{
+    font-size: 2.3rem;
+  }
+
 }
 
+
+
+
+
+/* -----------------------------------Font Break Point------------------------------------------ */
 /* Less than 1200 */
 @media only screen and (max-width: 1200px) {
   .link {
@@ -98,8 +152,21 @@ body {
   .submenu-link {
     font-size: 0.9rem;
   }
+
+  .name {
+    font-size: 2rem;
+    letter-spacing: 0.7rem;
+  }
+
+
+  .job-title{
+    font-size: 1.7rem;
+  }
+
+
 }
 
+/* ---------------------------------------Big Screens-------------------------------------- */
 /* all the screens over 760 make the hover possible and the dropdown menu appear */
 @media only screen and (min-width: 761px) {
 
@@ -109,7 +176,7 @@ body {
     flex-direction: column;
     align-items: center;
     visibility: hidden;
-    height: 0px;
+    height: 0;
     overflow: hidden;
   }
 
@@ -139,9 +206,37 @@ body {
     display: none;
   }
 
-
+/* ---------------------------HOMEPAGE LARGE SCREENS-------------------------------------- */
+/* Homepage CSS FOR ALL LARGE SCREENS */
+.content-wrapper {
+  height: 100vh;
+  justify-content: space-between;
 }
 
+.main-content {
+  justify-content: center;
+height: 80vh;
+}
+
+.title-wrapper {
+width: 66%;
+align-self: flex-start;
+margin-top: 7%;
+}
+
+.img-my-photo-homepage-desktop{
+  max-height: 80vh;
+  max-width: 40vw;
+align-self: flex-end;
+}
+
+.img-my-photo-homepage-mobile {
+  display: none;
+}
+
+
+}
+/* --------------------------------------SMALL SCREENS--------------------------------------- */
 /* Less than 760 */
 @media only screen and (max-width: 760px) {
   .menu-wrap {
@@ -288,29 +383,59 @@ body {
     color: #cc8b50;
   }
 
-/* class to make the sc submenu appear and disappear */
-.submenu-arrow-pressed {
+  /* class to make the sc submenu appear and disappear */
+  .submenu-arrow-pressed {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arrow-rotate {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(-45deg);
+    transition: transform 0.5s ease;
+  }
+
+/* ---------------------HOME PAGE MOBILE SCREENS--------------------------------- */
+.main-content {
+flex-direction: column;
+align-items: center;
+height: 100vh;
+justify-content: space-between;
+padding-bottom: 10%;
+}
+
+.title-wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.arrow-rotate {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(-45deg);
-  transition: transform 0.5s ease;
-}
-
+  justify-content: space-around;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  height: 60%;
 }
 
 
+.img-my-photo-homepage-mobile{
+  max-width: 80vw;
+  padding-bottom: 10%;
+}
+.img-my-photo-homepage-desktop {
+  display: none;
+}
 
+.name {
+  font-size: 1.8rem;
+  letter-spacing: 0.6rem;
+}
 
+.decorative-line{
+height: 3px;
+}
 
+.job-title{
+  font-size: 1.5rem;
+}
 
-
-
-
-
+}
 
 
 
