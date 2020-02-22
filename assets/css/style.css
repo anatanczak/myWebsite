@@ -29,11 +29,6 @@ body {
   align-items: baseline;
 }
 
-/* make the humburger checkbox be absent from the big screens */
-.toggler {
-  display: none;
-}
-
 /* style list items*/
 .nav-bar li {
   /* width: 10%; */
@@ -60,14 +55,27 @@ body {
   font-size: 1.375rem;
 }
 
-/* change text color when hover over menu items */
-.nav-bar a:hover {
-  color: #1D212E;
-  transition: color 0.3s ease;
-}
-
 .dropdown-list li {
   width: 100%;
+}
+
+.cv-and-arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+/* the arrow for a drop-down menu */
+.arrow {
+  width: 8px;
+  height: 8px;
+  border: solid #fbfafa;
+  border-width: 0 2.3px 2.3px 0;
+  padding: 3px;
+  margin: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 /* Less than 1400 */
@@ -96,7 +104,7 @@ body {
 @media only screen and (min-width: 761px) {
 
   /* make dropdown menu disappear */
-  .nav-bar-dropdown>ul {
+  .dropdown-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,19 +113,37 @@ body {
     overflow: hidden;
   }
 
+  /* change text color when hover over menu items */
+  .nav-bar a:hover {
+    color: #1D212E;
+    transition: color 0.3s ease;
+  }
+
   /* make dropdown menu appear when hover over */
   .nav-bar-dropdown:hover>ul {
     visibility: visible;
     height: 100%;
   }
+
+  .cv-and-arrow-wrapper:hover>a {
+    color: #1D212E;
+  }
+
+  .cv-and-arrow-wrapper:hover>div {
+    border: solid #1D212E;
+    border-width: 0 2.3px 2.3px 0;
+  }
+
+  /* make the humburger checkbox be absent from the big screens */
+  .toggler {
+    display: none;
+  }
+
+
 }
-
-
-
 
 /* Less than 760 */
 @media only screen and (max-width: 760px) {
-
   .menu-wrap {
     position: fixed;
     top: 0;
@@ -200,18 +226,18 @@ body {
   }
 
   /* Show Menu */
-  .menu-wrap .toggler:checked ~ .menu {
+  .menu-wrap .toggler:checked~.menu {
     visibility: visible;
   }
 
-  .menu-wrap .toggler:checked ~ .menu > div {
+  .menu-wrap .toggler:checked~.menu>div {
     transform: scale(1);
     transition-duration: 3s;
   }
 
-  .menu-wrap .toggler:checked ~ .menu > div > div {
+  .menu-wrap .toggler:checked~.menu>div>div {
     opacity: 1;
-    transition:  opacity 0.3s ease 0.3s;
+    transition: opacity 0.3s ease 0.3s;
   }
 
   .menu-wrap .menu {
@@ -227,7 +253,7 @@ body {
     justify-content: center;
   }
 
-  .menu-wrap .menu > div {
+  .menu-wrap .menu>div {
     background: #1d212e;
     border-radius: 50%;
     width: 200vw;
@@ -240,7 +266,7 @@ body {
     transition: all 0.3s ease;
   }
 
-  .menu-wrap .menu > div > div {
+  .menu-wrap .menu>div>div {
     text-align: center;
     max-width: 90vw;
     max-height: 100vh;
@@ -248,32 +274,33 @@ body {
     transition: opacity 0.3s ease;
   }
 
-
   .nav-bar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  .dropdown-list {
+    display: none;
+  }
 
-.nav-bar-dropdown>ul {
-  display: none;
+  .active {
+    color: #cc8b50;
+  }
+
+/* class to make the sc submenu appear and disappear */
+.submenu-arrow-pressed {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.active {
-  color: #cc8b50;
+.arrow-rotate {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: transform 0.5s ease;
 }
 
-/* TODO delete hovering for mobile*/
-/* change text color when hover over menu items */
-.nav-bar a:hover {
-  color: #cc8b50;
-  transition: color 0.3s ease;
 }
-}
-
-
 
 
 
