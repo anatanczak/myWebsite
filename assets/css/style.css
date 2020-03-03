@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
   background-color: #bdc2d5;
   font-size: 100%;
   margin: 0;
@@ -24,25 +23,37 @@ body {
   /* margin: 0.5% 0; */
   padding: 0;
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: flex-end;
+  background-color: red;
+align-items: baseline;
 }
 
+
+/* TODO-----------------PUT THIS CODE FOR DESKTOPS ONLY------------------ */
+/* style logo */
+.logo{
+
+}
+.menu{
+  margin: 20px;
+  background-color: yellow;
+}
 /* style list items*/
 .nav-bar li {
   /* width: 10%; */
   white-space: nowrap;
+  margin-right: 20px;
 }
 
 /* style links */
 .link {
   text-transform: uppercase;
   display: block;
-  padding: 2%;
   color: #fbfafa;
   text-decoration: none;
   text-align: center;
-  font-size: 1.5rem;
+  font-family: Comfortaa, sans-serif;
+  font-style: bold;
 }
 
 .active {
