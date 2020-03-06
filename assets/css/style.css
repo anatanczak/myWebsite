@@ -15,169 +15,342 @@ body {
   padding: 0;
 }
 
-
 /* ------------------------------------HOMEPAGE----------------------------------- */
 /* Home page general css */
-
 /* MOVE SOME STUFF SUCH AS SPACE-BETWEEN TO LARGE SCREENS */
 .content-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.backgound-image{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  height: 100vh;
-}
 
 .main-content {
   display: flex;
-padding: 0 3%;
-}
-
-.title-wrapper {
-text-align: center;
-}
-
-.name {
-  font-size: 3.5rem;
-  letter-spacing: 1rem;
-}
-
-.decorative-line{
-height: 5px;
-}
-
-.job-title{
-  color: #654c6b;
-  text-transform: uppercase;
-  font-size: 2.7rem;
-}
-
-
-
-/* -----------------------------------Font Break Point------------------------------ */
-/* Less than 1400 */
-@media only screen and (max-width: 1400px) {
-
-  .name {
-    font-size: 2.7rem;
-    letter-spacing: 0.8rem;
-  }
-
-  .decorative-line{
-  height: 4px;
-  }
-
-  .job-title{
-    font-size: 2.3rem;
-  }
-
-}
-
-
-
-
-
-/* -----------------------------------Font Break Point------------------------------------------ */
-/* Less than 1200 */
-@media only screen and (max-width: 1200px) {
-
-  .name {
-    font-size: 2rem;
-    letter-spacing: 0.7rem;
-  }
-
-
-  .job-title{
-    font-size: 1.7rem;
-  }
-
-}
-
-/* ---------------------------------------Big Screens-------------------------------------- */
-/* all the screens over 760 make the hover possible and the dropdown menu appear */
-@media only screen and (min-width: 761px) {
-
-/* ---------------------------HOMEPAGE LARGE SCREENS-------------------------------------- */
-/* Homepage CSS FOR ALL LARGE SCREENS */
-.content-wrapper {
-  height: 100vh;
-  justify-content: space-between;
-}
-
-.main-content {
-  justify-content: center;
-height: 80vh;
-}
-
-.title-wrapper {
-width: 66%;
-align-self: flex-start;
-margin-top: 7%;
-}
-
-.img-my-photo-homepage-desktop{
-  max-height: 80vh;
-  max-width: 40vw;
-align-self: flex-end;
-}
-
-.img-my-photo-homepage-mobile {
-  display: none;
-}
-
-}
-/* --------------------------------------SMALL SCREENS--------------------------------------- */
-/* Less than 760 */
-@media only screen and (max-width: 760px) {
-
-/* ---------------------HOMEPAGE MOBILE SCREENS--------------------------------- */
-.main-content {
-flex-direction: column;
-align-items: center;
-height: 100vh;
-justify-content: space-between;
-padding-bottom: 10%;
+  padding: 0 3%;
 }
 
 .title-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-top: 15%;
-  margin-bottom: 10%;
-  height: 60%;
-}
-
-
-.img-my-photo-homepage-mobile{
-  max-width: 80vw;
-  padding-bottom: 10%;
-}
-.img-my-photo-homepage-desktop {
-  display: none;
 }
 
 .name {
-  font-size: 1.8rem;
-  letter-spacing: 0.6rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-.decorative-line{
-height: 3px;
+.job-title {
+  color: #654c6b;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-.job-title{
-  font-size: 1.5rem;
+/* ---------------------------------------Big Screens-------------------------------------- */
+@media only screen and (min-width: 1024px) {
+
+  /* --------------FOR ALL PAGES ON DESKTOPS------------------- */
+  .link-footer {
+    text-transform: uppercase;
+    display: block;
+    color: #1D212E;
+    text-decoration: none;
+    text-align: center;
+    font-family: Comfortaa, sans-serif;
+    font-style: bold;
+    font-size: 0.625rem;
+  }
+
+  /* ---------------------------HOMEPAGE SMALL SCREENS-------------------------------------- */
+  /* Homepage CSS FOR ALL SMALL SCREENS */
+  .content-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    width: auto;
+    justify-content: space-between;
+  }
+
+  .background-image-tablet {
+    display: none;
+  }
+
+  .backgound-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+  }
+
+  .main-content {
+    justify-content: flex-end;
+    height: 80vh;
+  }
+
+  .title-wrapper {
+    width: 66%;
+    align-self: center;
+    /* margin-top: 15%;
+    margin-right: 10%; */
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .name {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .job-title {
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+    margin-top: 1.3rem;
+  }
+
+  .decorative-line {
+    height: 2px;
+  }
+
+  .img-my-photo-homepage-desktop {
+    max-height: 80vh;
+    max-width: 40vw;
+    align-self: flex-end;
+  }
+
+  .img-my-photo-homepage-mobile {
+    display: none;
+  }
+
+  /* mentions legales on the right-hand-side */
+  .link-footer-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
+/* --------------------------------------MEDIUM DESKTOPS--------------------------- */
+@media only screen and (min-width: 1200px) {
+
+  /* -----------------HOMEPAGE---------------------- */
+  .name {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .job-title {
+    font-size: 1.5rem;
+  }
 }
 
+/* -----------------------------------LARGE DESKTOPS---------------------------------------- */
+@media only screen and (min-width: 1600px) {
 
+  /* -----------------large DESKTOPS HOMEPAGE---------------------- */
+  .name {
+    font-size: 3.121rem;
+    letter-spacing: 0.65rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .job-title {
+    font-size: 1.75rem;
+    width: 80%;
+    text-align: center;
+    margin-top: 1.3rem;
+  }
+}
+
+/* ------------------------iPAD PRO PORTRAIT------------------------ */
+@media only screen and (max-width: 1050px) and (orientation: portrait) {
+  .content-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .backgound-image {
+    display: none;
+  }
+
+  .background-image-tablet {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+  }
+
+  .link-footer {
+visibility: hidden;
+opacity: 0;
+  }
+
+  .link-footer-mobile {
+  visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    color: #BDC2D5;
+    z-index: 5;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: Comfortaa, sans-serif;
+    font-weight: bold;
+    font-size: 0.625rem;
+  }
+
+  .main-content {
+    padding: 0;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  .title-wrapper {
+    margin-top: 20%;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .name {
+    font-size: 3.125rem;
+  }
+
+  .job-title {
+    max-width: 70%;
+  }
+
+  .img-my-photo-homepage-desktop {
+    align-self: flex-end;
+    max-height: 80vh;
+    max-width: 60vw;
+  }
+}
+
+/* --------------------------------------SMALL SCREENS--------------------------------------- */
+@media only screen and (max-width: 1023px) {
+
+  /* ---------------------HOMEPAGE TABLET SCREENS--------------------------------- */
+  .content-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .backgound-image {
+    display: none;
+  }
+
+  .background-image-tablet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+  }
+
+  .link-footer {
+visibility: hidden;
+opacity: 0;
+  }
+
+  .link-footer-mobile {
+  visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    color: #BDC2D5;
+    z-index: 5;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: Comfortaa, sans-serif;
+    font-weight: bold;
+    font-size: 0.625rem;
+  }
+
+  .main-content {
+    padding: 0;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  .title-wrapper {
+    margin-top: 20%;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .name {
+    font-size: 3.125rem;
+  }
+
+  .job-title {
+    max-width: 70%;
+  }
+
+  .img-my-photo-homepage-desktop {
+    max-height: 70vh;
+    align-self: flex-end;
+  }
+
+  .img-my-photo-homepage-mobile {
+    display: none;
+  }
+}
+
+/* --------------------------------------PHONES--------------------------------------- */
+/* Less than 600 */
+@media only screen and (max-width: 600px) {
+
+  /* ---------------------HOMEPAGE MOBILE SCREENS--------------------------------- */
+  .name {
+    display: none;
+  }
+
+  .decorative-line {
+    display: none;
+  }
+
+  .job-title {
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+
+  .img-my-photo-homepage-desktop {
+    display: none;
+  }
+
+  .img-my-photo-homepage-mobile {
+    display: block;
+    max-height: 80vh;
+    align-self: flex-start;
+  }
+}
 
 /* end */
