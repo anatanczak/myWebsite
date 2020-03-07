@@ -36,13 +36,13 @@
   }
 
   .active {
-    color: #896B92;
+    color: #FFFFFF;
   }
 
   /* change text color when hover over menu items */
   .nav-bar a:hover {
     text-decoration: underline;
-    color: #896B92;
+    color: #FFFFFF;
   }
 
   /* make the humburger checkbox be absent from the big screens */
