@@ -10,6 +10,7 @@ if (file_exists('../head.php')) {
   <div class="main-content-wrapper-about-me">
     <div class="section-one-and-navbar-wprapper">
       <img class="background-desktop-about-me" src="../assets/images/background-desktop-aboutme.jpg" alt="background">
+      <img class="background-about-me-tablet" src="../assets/images/background-aboutme-tablet.jpg" alt="background">
       <?php if (file_exists('../header.php')) {
         include_once '../header.php';
       } ?>
@@ -71,8 +72,7 @@ if (file_exists('../head.php')) {
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
-              <span class="dot-mastery dot-mastery-transparent"></span>
-              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery"></span>
               <span class="dot-mastery dot-mastery-transparent"></span>
               <span class="dot-mastery dot-mastery-transparent"></span>
               <span class="dot-mastery dot-mastery-transparent"></span>
@@ -88,10 +88,10 @@ if (file_exists('../head.php')) {
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
             </div>
           </div>
         </div>
@@ -106,13 +106,30 @@ if (file_exists('../head.php')) {
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
             </div>
           </div>
+          <div class="prog-lang-group">
+            <p class="prog-lang">Node.js</p>
+            <div class="level-of-masterty">
+              <span class="dot-mastery"></span>
+              <span class="dot-mastery"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+            </div>
+          </div>
+        </div>
+        <div class="two-prog-lang-group">
           <div class="prog-lang-group">
             <p class="prog-lang">Swift</p>
             <div class="level-of-masterty">
@@ -124,45 +141,64 @@ if (file_exists('../head.php')) {
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
             </div>
           </div>
-        </div>
-        <div class="two-prog-lang-group">
           <div class="prog-lang-group">
             <p class="prog-lang">C</p>
             <div class="level-of-masterty">
               <span class="dot-mastery"></span>
               <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-            </div>
-          </div>
-          <div class="prog-lang-group">
-            <p class="prog-lang">HTML5</p>
-            <div class="level-of-masterty">
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
-              <span class="dot-mastery"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
+              <span class="dot-mastery dot-mastery-transparent"></span>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- --------------------------SECTION 3--------------------------- -->
+    <section class="section-three-about-me">
+      <img class="background-aboutme-section3" src="../assets/images/cocrete-background-aboutme-section3.jpg" alt="background">
+      <img class="background-aboutme-section3-tablet" src="../assets/images/cocrete-background-tablet.jpg" alt="background">
+      <div class="circle-skill-wrapper-all">
+        <div class="circle-skill-wrapper">
+          <img class="circle-skill" src="../assets/images/terminal-icon.svg" alt="terminal icon">
+        </div>
+        <div class="circle-skill-wrapper">
+        <img class="circle-skill" src="../assets/images/git-icon.svg" alt="git icon">
+        </div>
+        <div class="circle-skill-wrapper">
+        <img class="circle-skill" src="../assets/images/msoffice-icon.svg" alt="ms office icon">
+        </div>
+        <div class="circle-skill-wrapper">
+        <img class="circle-skill" src="../assets/images/xcode-icon.svg" alt="xcode icon">
+        </div>
+        <div class="circle-skill-wrapper">
+        <img class="circle-skill" src="../assets/images/cocoapods-icon.svg" alt="cocoapods icon">
+        </div>
+        <div class="circle-skill-wrapper">
+        <img class="circle-skill" src="../assets/images/xd-icon.svg" alt="xd icon">
+        </div>
+        <div class="circle-skill-wrapper">
+        <img class="circle-skill" src="../assets/images/vscode-icon.svg" alt="vscode icon">
+        </div>
+        <div class="circle-skill-wrapper">
+        <img class="circle-skill" src="../assets/images/npm-icon.svg" alt="npm-icon">
+        </div>
+        <div class="circle-skill-wrapper">
+        <img class="circle-skill" src="../assets/images/ai-icon.svg" alt="ai icon">
+        </div>
+      </div>
+    </section>
+    <div class="link-footer-center" ><a class="link-footer nowrap-center" id="footer-link-legal" href="../mentions-legales/index.html">Mentions Légales</a></div>
+    
   </div>
   <!-- <script src="../assets/js/script.js"></script> -->
 </body>
