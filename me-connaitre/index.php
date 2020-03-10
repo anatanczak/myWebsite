@@ -197,10 +197,6 @@ if (file_exists('../head.php')) {
         </div>
       </div>
     </section>
-    <div class="link-footer-center" ><a class="link-footer nowrap-center" id="footer-link-legal" href="../mentions-legales/index.html">Mentions Légales</a></div>
-    
-  </div>
-  <!-- <script src="../assets/js/script.js"></script> -->
-</body>
-
-</html>
+    <?php if (file_exists('../footer.php')) {
+        include_once '../footer.php';
+      } ?>

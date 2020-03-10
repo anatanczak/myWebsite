@@ -10,7 +10,7 @@ include 'head.php';
   <div class="content-wrapper">
     <img class="backgound-image" src="assets/images/background-homepage-2x.jpg" alt="background">
     <img class="background-image-tablet" src="assets/images/background-hp-tablet.jpg" alt="background">
-    <a class="link-footer link-footer-right" id="footer-link-legal" href="mentions-legales/index.html">Mentions Légales</a>
+    <!-- <a class="link-footer link-footer-right" id="footer-link-legal" href="mentions-legales/index.html">Mentions Légales</a> -->
 
     <?php if (file_exists('header.php')) {
     include 'header.php';
@@ -29,10 +29,12 @@ include 'head.php';
       <img class="img-my-photo-homepage-mobile" src="assets/images/my-photo-hp-mobile.png" alt="owner's photo">
     </section>
 
-
-  </div>
+    <?php if (file_exists('footer.php')) {
+        include_once 'footer.php';
+      } ?>
+  <!-- </div>
 
   <script src="assets/js/script.js"></script>
 </body>
 
-</html>
+</html> -->

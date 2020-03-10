@@ -1,7 +1,7 @@
 
 
 <header>
-  <div class="logo-and-nav-bar-wrapper">
+  <div class="logo-and-nav-bar-wrapper" id="logo-and-nav-bar-wrapper-id">
     <a class="logo" href="../index.php">
       <img class="logo-image"src="<?php if (isset($pageName)) { if ($pageName == "homepage"){echo "assets/images/logo.svg";}else{echo "../assets/images/logo.svg";}}?>" alt="logo">
               <!-- add an if statement in php to make this logo available only for homepage -->

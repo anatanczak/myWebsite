@@ -15,6 +15,27 @@ body {
     padding: 0;
 }
 
+.link-footer {
+    text-transform: uppercase;
+    display: block;
+    color: #1D212E;
+    text-decoration: none;
+    text-align: center;
+    font-family: Comfortaa, sans-serif;
+    font-weight: bold;
+    font-size: 0.625rem;
+    position: absolute;
+    bottom: 10px;
+    right: 40vw;
+    width: 20vw;
+    order: 1;
+}
+
+.nowrap-center {
+    white-space: nowrap;
+    text-align: center;
+}
+
 
 /* ------------------------------------HOMEPAGE----------------------------------- */
 
@@ -149,16 +170,6 @@ body {
 
 @media only screen and (min-width: 1024px) {
     /* --------------FOR ALL PAGES ON DESKTOPS------------------- */
-    .link-footer {
-        text-transform: uppercase;
-        display: block;
-        color: #1D212E;
-        text-decoration: none;
-        text-align: center;
-        font-family: Comfortaa, sans-serif;
-        font-weight: bold;
-        font-size: 0.625rem;
-    }
     /* ---------------------------HOMEPAGE SMALL SCREENS-------------------------------------- */
     /* Homepage CSS FOR ALL SMALL SCREENS */
     .content-wrapper {
@@ -189,6 +200,7 @@ body {
         text-align: center;
         align-items: center;
         align-content: center;
+        margin-bottom: 10%;
     }
     .name {
         font-size: 2rem;
@@ -213,25 +225,14 @@ body {
         display: none;
     }
     /* mentions legales on the right-hand-side */
-    .link-footer-right {
+    /* .link-footer-right {
         position: absolute;
         bottom: 10px;
         right: 10px;
-    }
+    } */
     /* --------------------------------------ABOUT ME PAGE SMALL DESKTOPS ------------------------------------ */
     .background-about-me-tablet {
         display: none;
-    }
-    .nowrap-center {
-        white-space: nowrap;
-        text-align: center;
-    }
-    .link-footer-center {
-        order: 1;
-        position: absolute;
-        bottom: 10px;
-        right: 40vw;
-        width: 20vw;
     }
     .section-one-and-navbar-wprapper {
         justify-content: space-between;
@@ -374,11 +375,11 @@ body {
         z-index: -1;
         width: 100vw;
     }
-    .link-footer {
+    /* .link-footer {
         visibility: hidden;
         opacity: 0;
-    }
-    .link-footer-mobile {
+    } */
+    /* .link-footer-mobile {
         visibility: visible;
         opacity: 1;
         transition: opacity 0.5s ease-in;
@@ -394,7 +395,7 @@ body {
         font-family: Comfortaa, sans-serif;
         font-weight: bold;
         font-size: 0.625rem;
-    }
+    } */
     .main-content {
         padding: 0;
         flex-direction: column;
@@ -419,6 +420,60 @@ body {
         max-height: 80vh;
         max-width: 60vw;
     }
+    /* ----------------------- ABOUT ME iPAD PRO PORTRAIT -   ---------------- */
+    .background-desktop-about-me {
+        display: none;
+    }
+    .background-about-me-tablet {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: -1;
+    }
+    .section-one-and-navbar-wprapper {
+        height: 100%;
+    }
+    .title-and-paragraph-wrapper-about-me {
+        width: 60%;
+        margin-top: 15%;
+    }
+    .my-photo-about-me {
+        max-width: 40%;
+        height: auto;
+        margin-left: -15%;
+    }
+    .section-three-about-me {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+    }
+    .background-aboutme-section3 {
+        display: none;
+    }
+    .background-aboutme-section3-tablet {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        z-index: -1;
+    }
+    /* .link-footer {
+        display: none;
+    } */
+    .circle-skill-wrapper-all {
+        width: 500px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .circle-skill {
+        margin: 15px;
+        width: 100px;
+        height: 100px;
+    }
 }
 
 
@@ -442,7 +497,7 @@ body {
         z-index: -1;
         width: 100vw;
     }
-    .link-footer {
+    /* .link-footer {
         visibility: hidden;
         opacity: 0;
     }
@@ -462,7 +517,7 @@ body {
         font-family: Comfortaa, sans-serif;
         font-weight: bold;
         font-size: 0.625rem;
-    }
+    } */
     .main-content {
         padding: 0;
         flex-direction: column;
@@ -505,6 +560,7 @@ body {
         width: 50%;
     }
     .my-photo-about-me {
+        display: block;
         height: 50vh;
         align-self: flex-end;
         margin-left: -25%;
@@ -525,9 +581,9 @@ body {
         height: auto;
         z-index: -1;
     }
-    .link-footer {
+    /* .link-footer {
         display: none;
-    }
+    } */
     .circle-skill-wrapper-all {
         width: 500px;
         padding-top: 50px;
@@ -608,6 +664,24 @@ body {
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
+    }
+    .background-aboutme-section3-tablet {
+        display: none;
+        width: 80%;
+    }
+    .circle-skill-wrapper-all {
+        width: 300px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .circle-skill-wrapper {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title-and-paragraph-wrapper-about-me {
+        margin-top: 90px;
     }
 }
 
