@@ -1,11 +1,9 @@
-
-
 <header>
-  <div class="logo-and-nav-bar-wrapper" id="logo-and-nav-bar-wrapper-id">
+  <div class="logo-and-nav-bar-wrapper <?php if (isset($pageName)) { if ($pageName == "cv"){echo "nav-bar-background";}}?> " id="logo-and-nav-bar-wrapper-id">
     <a class="logo" href="../index.php">
-      <img class="logo-image"src="<?php if (isset($pageName)) { if ($pageName == "homepage"){echo "assets/images/logo.svg";}else{echo "../assets/images/logo.svg";}}?>" alt="logo">
+      <img class="logo-image" src="<?php if (isset($pageName) && ($pageName == "homepage") ){echo "assets/images/logo.svg";}else{echo "../assets/images/logo.svg";}?>" alt="logo">
               <!-- add an if statement in php to make this logo available only for homepage -->
-      <img class="logo-image-mobile-hp"src="<?php if (isset($pageName)) { if ($pageName == "homepage"){echo "assets/images/logo-mobile-hp.svg";}else{echo "../assets/images/logo-mobile-hp.svg";}}?>" alt="logo"></a>
+      <img class="logo-image-mobile-hp"src="<?php if (isset($pageName) && ($pageName == "homepage")){echo "assets/images/logo-mobile-hp.svg";}else{echo "../assets/images/logo-mobile-hp.svg";}?>" alt="logo"></a>
 
     <nav class="menu-wrap">
       <!-- this checkbox is used to use it's pseudo class checked to make the menu appear -->

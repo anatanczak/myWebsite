@@ -1,21 +1,15 @@
-// //jshint esversion: 6
-// var checkbox = document.getElementById("checkbox-menu-toggler");
-// var footerLink = document.getElementById("footer-link-legal");
+const body = document.body;
+let lastScroll = 0;
+var navbar = document.getElementById('logo-and-nav-bar-wrapper-id');
+window.addEventListener('scroll', () => {
 
-// checkbox.addEventListener("click", makeLinkAppear);
+    const currentScroll = window.pageYOffset;
+    if (currentScroll == 0 || currentScroll < 10) {
+        //TO DO see if we can toggle class with classList.toggle
+        navbar.classList.remove("scrolled-menu");
+        return;
+    } else {
+        navbar.classList.add("scrolled-menu");
 
-// function makeLinkAppear(){
-
-
-//   if (checkbox.checked === true){
-// setTimeout(()=> {footerLink.classList.add("link-footer-mobile");}, 2000);
-
-//   } else {
-//       footerLink.classList.remove("link-footer-mobile");
-//   }
-// }
-
-// function removeElement(id) {
-//     var elem = document.getElementById(id);
-//     return elem.parentNode.removeChild(elem);
-// }
+    }
+});

@@ -25,7 +25,7 @@ include 'head.php';
         <h2 class="job-title">développeur concepteur d'applications</h2>
       </div>
 
-      <img class="img-my-photo-homepage-desktop" src="assets/images/my-photo-homepage.png" alt="owner's photo">
+      <img class="img-my-photo-homepage-desktop" src="assets/images/my-photo-dt-homepage.png" alt="owner's photo">
       <img class="img-my-photo-homepage-mobile" src="assets/images/my-photo-hp-mobile.png" alt="owner's photo">
     </section>
 

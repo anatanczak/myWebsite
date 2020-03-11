@@ -1,12 +1,16 @@
+<?php $pageName = "cv" ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/navbar.css">
   <link rel="stylesheet" href="style.css">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
   <title>CV Tanczak</title>
 </head>
 
@@ -15,8 +19,13 @@
     <div class="decoration"></div>
     <div class="maincontent-wrapper">
       <!-- this div is a wrapper for image and it's position is relative so that the div contaner for one and two can be positioned over the image using abslute postion and  bottom left top right 0-->
+
       <div class="image-and-divcont-wrapper">
+ 
         <img class="deco-img-desktop" src="images/deco-top-desktop.svg" alt="image decorative">
+        <?php if (file_exists('../header.php')) {
+        include_once '../header.php';
+      } ?>
         <div class="div-container-one-and-two">
           <div class="div-item-one">
             <img class="img-deco" src="images/deco-top.svg" alt="decoration">
