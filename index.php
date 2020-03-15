@@ -7,6 +7,7 @@ include 'head.php';
 ?>
 
 <body class="body-accueil">
+
   <div class="content-wrapper">
     <img class="backgound-image" src="assets/images/background-homepage-2x.jpg" alt="background">
     <img class="background-image-tablet" src="assets/images/background-hp-tablet.jpg" alt="background">

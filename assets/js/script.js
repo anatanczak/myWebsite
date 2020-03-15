@@ -10,6 +10,5 @@ window.addEventListener('scroll', () => {
         return;
     } else {
         navbar.classList.add("scrolled-menu");
-
     }
 });

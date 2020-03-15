@@ -32,7 +32,7 @@ body {
     bottom: 10px;
     right: 40vw;
     width: 20vw;
-    order: 1;
+    order: 6;
 }
 
 .nowrap-center {
@@ -204,6 +204,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10%;
+    align-items: center;
+    align-content: center;
 }
 
 .meslistes-title {
@@ -222,7 +224,7 @@ body {
 
 .text-and-title-meslistes-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .meslistes-img-darkmode-deskt {
@@ -242,15 +244,44 @@ body {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    justify-content: space-between;
+}
+
+.meslistes-iphone-dm-mobile {
+    display: none;
 }
 
 .meslistes-download-btn {
+    -webkit-appearance: none;
     background-color: #CD8C50;
     color: #FBFAFA;
     font-family: Comfortaa, sans-serif;
-    /* box-shadow: 0px 3px 6px #00000029; */
+    box-shadow: 0px 3px 6px #00000029;
     border-radius: 26px;
+    border-style: none;
+}
+
+.meslistes-lm-phones-wrapper {
+    width: 100%;
+}
+
+.meslistes-lm-wallpaper-wrapper {
+    width: 100%;
+}
+
+.meslistes-iphones-lm-desktop {
+    display: none;
+}
+
+.meslistes-iphones-lm-mobile {
+    display: none;
+}
+
+.meslistes-wallpaper-lm-desktop {
+    display: none;
+}
+
+.meslistes-wallpaper-lm-mobile {
+    display: none;
 }
 
 
@@ -426,14 +457,16 @@ body {
     }
     .text-and-title-meslistes-wrapper {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
+        /* align-items: center;
+        align-content: center; */
         padding-left: 5%;
         padding-right: 5%;
     }
     .meslistes-title {
-        font-size: 2.25rem;
+        font-size: 1.5rem;
+    }
+    .meslistes-p {
+        font-size: 1rem;
     }
     .meslistes-video-wrapper {
         width: 50%;
@@ -443,6 +476,22 @@ body {
     }
     .meslistes-dm-iphone-and-button-wrapper {
         width: 50%;
+    }
+    .meslistes-iphone-dm {
+        max-width: 34vw;
+    }
+    .meslistes-download-btn {
+        height: 35px;
+        width: 10vw;
+        font-size: 0.7rem;
+    }
+    .meslistes-iphones-lm-desktop {
+        display: block;
+        width: 80vw;
+    }
+    .meslistes-wallpaper-lm-desktop {
+        display: block;
+        width: 100vw;
     }
 }
 
@@ -480,54 +529,80 @@ body {
         margin-top: 42vh;
         font-size: 3rem;
     }
+    .meslistes-download-btn {
+        height: 45px;
+        width: 12vw;
+        font-size: 1rem;
+        padding: 5px;
+    }
 }
 
+
+}
 @media only screen and (min-width: 1600px) {
     /* -----------------large DESKTOPS HOMEPAGE---------------------- */
+    
     .name {
         font-size: 3.121rem;
         letter-spacing: 0.65rem;
         margin-bottom: 1.3rem;
     }
+    
     .job-title {
         font-size: 1.75rem;
         width: 80%;
         text-align: center;
         margin-top: 1.3rem;
     }
+    /* --------------------------------------Portfolio------------------------------------ */
+    
+    .meslistes-title {
+        font-size: 2.25rem;
+    }
+    
+    .meslistes-p {
+        font-size: 1.5rem;
+    }
+    
+    .meslistes-download-btn {
+        height: 50px;
+        width: 12vw;
+        font-size: 1.2rem;
+    }
 }
-
 @media only screen and (min-width: 1650px) {
     /* --------------------------------------ABOUT ME PAGE------------------------------------ */
+    
     .title-and-paragraph-wrapper-about-me {
         margin-right: 70px;
         width: 35%;
     }
 }
-
 @media only screen and (min-width: 1800px) {
     /* --------------------------------------ABOUT ME PAGE------------------------------------ */
+    
     .title-and-paragraph-wrapper-about-me {
         margin-right: 150px;
     }
     /* --------------------------------------Portfolio------------------------------------ */
+    
     .portfolio-h1 {
         font-size: 3.938rem;
     }
 }
 
-
 /* ------------------------iPAD PRO PORTRAIT------------------------ */
-
 @media only screen and (max-width: 1050px) and (orientation: portrait) {
     .content-wrapper {
         height: 100vh;
         width: 100vw;
         overflow: hidden;
     }
+    
     .backgound-image {
         display: none;
     }
+    
     .background-image-tablet {
         display: block;
         position: absolute;
@@ -537,12 +612,14 @@ body {
         z-index: -1;
         width: 100vw;
     }
+    
     .main-content {
         padding: 0;
         flex-direction: column;
         height: 100vh;
         justify-content: space-between;
     }
+    
     .title-wrapper {
         margin-top: 20%;
         align-self: center;
@@ -550,21 +627,26 @@ body {
         align-items: center;
         align-content: center;
     }
+    
     .name {
         font-size: 3.125rem;
     }
+    
     .job-title {
         max-width: 70%;
     }
+    
     .img-my-photo-homepage-desktop {
         align-self: flex-end;
         max-height: 80vh;
         max-width: 60vw;
     }
     /* ----------------------- ABOUT ME iPAD PRO PORTRAIT -   ---------------- */
+    
     .background-desktop-about-me {
         display: none;
     }
+    
     .background-about-me-tablet {
         display: block;
         position: absolute;
@@ -573,26 +655,32 @@ body {
         width: 100vw;
         z-index: -1;
     }
+    
     .section-one-and-navbar-wprapper {
         height: 100%;
     }
+    
     .title-and-paragraph-wrapper-about-me {
         width: 60%;
         margin-top: 15%;
     }
+    
     .my-photo-about-me {
         max-width: 40%;
         height: auto;
         margin-left: -15%;
     }
+    
     .section-three-about-me {
         position: relative;
         overflow: hidden;
         width: 100vw;
     }
+    
     .background-aboutme-section3 {
         display: none;
     }
+    
     .background-aboutme-section3-tablet {
         display: block;
         position: absolute;
@@ -602,17 +690,20 @@ body {
         height: auto;
         z-index: -1;
     }
+    
     .circle-skill-wrapper-all {
         width: 500px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    
     .circle-skill {
         margin: 15px;
         width: 100px;
         height: 100px;
     }
     /* -------- --------- ----------- PORFOLIO ---------- --------- ---------- */
+    
     .hero-image-and-title-wrapper-portfolio {
         height: 100vh;
         width: 100vw;
@@ -621,9 +712,11 @@ body {
         align-content: center;
         justify-content: space-between;
     }
+    
     .hero-img-portfolio-desktop {
         display: none;
     }
+    
     .hero-img-portfolio-tablet {
         display: block;
         position: absolute;
@@ -633,37 +726,47 @@ body {
         width: 100vw;
         z-index: -1;
     }
+    
     .h1-wrapper-portfolio {
         width: 100vw;
         text-align: center;
         height: 20vh;
         flex: 0;
     }
+    
     .portfolio-h1 {
         font-size: 2.7rem;
         margin-bottom: 25vh;
     }
+    
     .meslistes-img-darkmode-deskt {
         display: none;
     }
+    
     .meslistes-img-darkmode-tablet {
         display: block;
+        max-width: 50vw;
+    }
+    
+    .meslistes-iphone-dm {
+        max-width: 40vw;
     }
 }
 
-
 /* -------------------------- ------------SMALL SCREENS ---------------- --------- ---- ---------- */
-
 @media only screen and (max-width: 1023px) {
     /* ---------------------HOMEPAGE TABLET SCREENS ---------------------- ----------- */
+    
     .content-wrapper {
         height: 100vh;
         width: 100vw;
         overflow: hidden;
     }
+    
     .backgound-image {
         display: none;
     }
+    
     .background-image-tablet {
         position: absolute;
         top: 0;
@@ -672,12 +775,14 @@ body {
         z-index: -1;
         width: 100vw;
     }
+    
     .main-content {
         padding: 0;
         flex-direction: column;
         height: 100vh;
         justify-content: space-between;
     }
+    
     .title-wrapper {
         margin-top: 20%;
         align-self: center;
@@ -685,23 +790,29 @@ body {
         align-items: center;
         align-content: center;
     }
+    
     .name {
         font-size: 3.125rem;
     }
+    
     .job-title {
         max-width: 70%;
     }
+    
     .img-my-photo-homepage-desktop {
         max-height: 70vh;
         align-self: flex-end;
     }
+    
     .img-my-photo-homepage-mobile {
         display: none;
     }
     /* ------------------------- ---- --- -------ABOUT ME TABLETS---- ---- ---- ----- ---- ----- --------- */
+    
     .background-desktop-about-me {
         display: none;
     }
+    
     .background-about-me-tablet {
         position: absolute;
         top: 0;
@@ -709,24 +820,29 @@ body {
         width: 100vw;
         z-index: -1;
     }
+    
     .title-and-paragraph-wrapper-about-me {
         margin-top: 20%;
         width: 50%;
     }
+    
     .my-photo-about-me {
         display: block;
         height: 50vh;
         align-self: flex-end;
         margin-left: -25%;
     }
+    
     .section-three-about-me {
         position: relative;
         overflow: hidden;
         width: 100vw;
     }
+    
     .background-aboutme-section3 {
         display: none;
     }
+    
     .background-aboutme-section3-tablet {
         position: absolute;
         top: 0;
@@ -735,17 +851,20 @@ body {
         height: auto;
         z-index: -1;
     }
+    
     .circle-skill-wrapper-all {
         width: 500px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    
     .circle-skill {
         margin: 15px;
         width: 100px;
         height: 100px;
     }
     /* ------------------------- ---- --- -------PORTFOLIO TABLETS---- ---- ---- ----- ---- ----- --------- */
+    
     .hero-image-and-title-wrapper-portfolio {
         height: 100vh;
         width: 100vw;
@@ -754,6 +873,7 @@ body {
         align-content: center;
         justify-content: space-between;
     }
+    
     .hero-img-portfolio-tablet {
         display: block;
         position: absolute;
@@ -763,55 +883,155 @@ body {
         width: 100vw;
         z-index: -1;
     }
+    
     .h1-wrapper-portfolio {
         text-align: center;
     }
+    
     .portfolio-h1 {
         font-size: 2.7rem;
         margin-bottom: 25vh;
     }
+    
     .meslistes-img-darkmode-tablet {
         display: block;
     }
+    
+    .text-and-title-meslistes-wrapper {
+        width: 50%;
+        padding-left: 20px;
+    }
+    
+    .meslistes-dm-iphone-and-button-wrapper {
+        width: 50%;
+    }
+    
+    .meslistes-iphone-dm {
+        max-width: 40vw;
+    }
+    
+    .meslistes-video {
+        max-width: 50vw;
+    }
+    
+    .meslistes-download-btn {
+        height: 30px;
+        width: 12vh;
+    }
+    
+    .meslistes-iphones-lm-mobile {
+        display: block;
+        width: 90vw;
+    }
+    
+    .meslistes-wallpaper-lm-mobile {
+        display: block;
+        width: 100vw;
+    }
 }
-
 @media only screen and (max-width: 800px) {
     /* ------------------------- ---- --- -------ABOUT ME small /huge phones TABLETS---- ---- ---- ----- ---- ----- --------- */
+    
     .title-and-paragraph-wrapper-about-me {
         margin-top: 15%;
         width: 60%;
         margin-left: -7%;
     }
+    
     .h1-about-me {
         font-size: 1.7rem;
         font-weight: 700;
     }
+    
     .text-about-me {
         font-size: 0.8rem;
         font-weight: 400;
         line-height: 1.4;
     }
+    
     .my-photo-about-me {
         height: 40vh;
         align-self: flex-end;
         margin-left: -30%;
     }
+    /* ------------------ PORTFOLIO ------------------ */
+    
+    .meslistes-img-darkmode-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        order: 1;
+    }
+    
     .meslistes-img-darkmode-tablet {
         display: none;
     }
+    
     .meslistes-img-darkmode-mobile {
         display: block;
+        max-width: 80vw;
+    }
+    
+    .text-and-title-meslistes-wrapper {
+        width: 100%;
+        order: 2;
+        padding: 3% 10%;
+    }
+    
+    .meslistes-iphone-dm {
+        display: none;
+    }
+    
+    .meslistes-iphone-dm-mobile {
+        display: block;
+        max-width: 80vw;
+    }
+    
+    .meslistes-video-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        order: 4;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    .meslistes-video {
+        max-width: 80vw;
+    }
+    
+    .meslistes-p {
+        text-align: left;
+    }
+    
+    .meslistes-dm-iphone-and-button-wrapper {
+        width: 100%;
+        order: 3;
+    }
+    
+    .meslistes-download-btn {
+        height: 35px;
+        width: 200px;
+        font-size: 0.7rem;
+    }
+    
+    .meslistes-lm-phones-wrapper {
+        order: 5;
+    }
+    
+    .meslistes-lm-wallpaper-wrapper {
+        order: 6;
     }
 }
 
-
 /* --------------------------------------PHONES--------------------------------------- */
-
 @media only screen and (max-width: 750px) {
     /* -------------------------- Portfolio ------------------------ */
+    
     .hero-img-portfolio-tablet {
         display: none;
     }
+    
     .hero-img-portfolio-mobile {
         display: block;
         position: absolute;
@@ -821,26 +1041,28 @@ body {
         width: 100vw;
         z-index: -1;
     }
+    
     .portfolio-h1 {
         font-size: 2rem;
         margin-bottom: 10vh;
     }
 }
 
-
 /* Less than 600 */
-
 @media only screen and (max-width: 600px) {
     .link-footer {
         font-size: 0.4rem;
     }
     /* ---------------------HOMEPAGE MOBILE SCREENS--------------------------------- */
+    
     .name {
         display: none;
     }
+    
     .decorative-line {
         display: none;
     }
+    
     .job-title {
         align-self: flex-start;
         text-align: left;
@@ -848,21 +1070,26 @@ body {
         font-size: 1rem;
         margin-left: 20px;
     }
+    
     .img-my-photo-homepage-desktop {
         display: none;
     }
+    
     .img-my-photo-homepage-mobile {
         display: block;
         max-height: 80vh;
         align-self: flex-start;
     }
     /* ------------------------ ABOUT ME PAGE MOBILE --------------------------- */
+    
     .background-about-me-tablet {
         display: none;
     }
+    
     .my-photo-about-me {
         display: none;
     }
+    
     .title-and-paragraph-wrapper-about-me {
         width: 80%;
         background-image: url("../images/background-css-aboutme.jpg");
@@ -873,49 +1100,53 @@ body {
         padding-right: 10px;
         padding-bottom: 10px;
     }
+    
     .background-aboutme-section3-tablet {
         display: none;
         width: 80%;
     }
+    
     .circle-skill-wrapper-all {
         width: 300px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    
     .circle-skill-wrapper {
         width: 45%;
     }
     /* --------------------------------------- PORTFOLIO--------------------------------------- */
+    
     .h1-wrapper-portfolio {
         /* self-align: center; */
         width: 60vw;
     }
+    
     .portfolio-h1 {
         font-size: 2.5rem;
         margin-bottom: 20vh;
     }
 }
-
 @media only screen and (max-width: 420px) {
     /* --------------------------------------- PORTFOLIO--------------------------------------- */
+    
     .h1-wrapper-portfolio {
         width: 40vw;
     }
+    
     .portfolio-h1 {
         font-size: 1.7rem;
         margin-bottom: 15vh;
     }
 }
 
-
 /* TODO FIND WHAT I MEAN BY THIS CODE */
-
 @media only screen and (max-width: 600px) {
     /* ---- ----- ----- ABOUT ME ----- ---- ----- */
+    
     .title-and-paragraph-wrapper-about-me {
         margin-top: 90px;
     }
 }
-
 
 /* end */

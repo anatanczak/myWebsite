@@ -23,8 +23,10 @@ if (file_exists('../head.php')) {
       <div class="text-and-title-meslistes-wrapper">
         <h2 class="meslistes-title">MESLISTES.</h2>
         <p class="meslistes-p">
-          Meslistes is an elegant to-do list app that will make your life easier. The Intuitive interface brings simplicity into the process of creating checklists.
-          No signup is required so you can start to organize your life right away. Just create your lists and add items to them. With an add-a-reminder feature, you will never forget your errands or shopping lists. For those of you who love having everything in the calendar don't worry there is this option for you, too.</p>
+          MESLISTES c’est plus qu'une simple to-do list, c’est une application indispensable pour ceux qui ont du mal à rester organisés. On peut y créer plusieurs listes : les courses, les choses à faire, les films à regarder, les lieux à visiter ou encore les choses à ne pas oublier quand on part en voyage. Vous pouvez également prendre des photos d’objets et les ajouter à votre liste.
+          Il n’est pas nécessaire d'être un pro du smartphone pour utiliser cette application, elle très intuitive et facile à utiliser.</p>
+        <p class="meslistes-p">J’ai créé cette application avec Swift, le langage natif de la programmation iOS.</p>
+        <p class="meslistes-p">Vous pouvez télécharger cette application gratuitement sur l‘App Store.</p>
       </div>
       <div class="meslistes-img-darkmode-wrapper">
         <img class="meslistes-img-darkmode-deskt" src="../assets/images/meslistes-img-dm.jpg">
@@ -38,10 +40,20 @@ if (file_exists('../head.php')) {
         </video>
       </div>
       <div class="meslistes-dm-iphone-and-button-wrapper">
-        <img src="../assets/images/meslistes-iphone-dm.jpg" alt="screenshot of the app meslistes">
-        <button class="meslistes-download-btn">MESLISTES IN App Store</button>
+        <img class="meslistes-iphone-dm" src="../assets/images/meslistes-iphone-dm.jpg" alt="screenshot of the app meslistes">
+        <img class="meslistes-iphone-dm-mobile" src="../assets/images/meslistes-iphone-dm-mobile.jpg" alt="screenshot of the app meslistes">
+        <button class="meslistes-download-btn" onclick="window.location.href='https://apps.apple.com/us/app/meslistes-a-checklist-app/id1458475140'">MESLISTES IN App Store</button>
+      </div>
+      <div class="meslistes-lm-phones-wrapper">
+        <img class="meslistes-iphones-lm-desktop" src="../assets/images/meslistes-iphones-lm-desktop.jpg" alt="Image of meslistes app in light mode">
+        <img class="meslistes-iphones-lm-mobile" src="../assets/images/meslistes-lm-iphone-mobile.jpg" alt="Image of meslistes app in light mode">
+      </div>
+      <div class="meslistes-lm-wallpaper-wrapper">
+        <img class="meslistes-wallpaper-lm-desktop" src="../assets/images/meslistes-wallpaper-lm-desktop.jpg" alt="Image of meslistes app in light mode">
+        <img class="meslistes-wallpaper-lm-mobile" src="../assets/images/meslistes-wallpaper-lm-mobile.jpg" alt="Image of meslistes app in light mode">
       </div>
     </section>
-    <?php if (file_exists('footer.php')) {
-      include_once 'footer.php';
+
+    <?php if (file_exists('../footer.php')) {
+      include_once '../footer.php';
     } ?>

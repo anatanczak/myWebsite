@@ -21,4 +21,17 @@ function getNameOfCurrentPage () {
    return $curPageName;
 }
 
+function setTitleForPage(string $named){
+switch($named) {
+     case "portfolio": 
+          return "Portfolio";
+     case "homepage": 
+          return "Accueil";
+     case "aboutMe": 
+          return "Me Conaître";
+     case "contact": 
+          return "Contact";
+}
+}
+
  ?>
