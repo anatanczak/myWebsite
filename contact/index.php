@@ -1,59 +1,50 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<?php
+// set the var to make active in navbarpossible
+$pageName = "contact";
+if (file_exists('../head.php')) {
+  include '../head.php';
+}
+?>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <title>Accueil</title>
-</head>
+<body class="body-contact">
+  <div class="main-content-wrapper-contact">
+    <?php if (file_exists('../header.php')) {
+      include '../header.php';
+    } ?>
+    <img class="contact-background-img-desktop" src="../assets/images/contact-background-desktop.jpg" alt="background image with a phone handset">
+    <img class="contact-background-img-tablet" src="../assets/images/contact-background-tablet.jpg" alt="background image with a phone handset">
+    <img class="contact-background-img-mobile" src="../assets/images/contact-background-mobile.jpg" alt="background image with a phone handset">
+    <form class="contact-form" action="#">
 
-<body class="body-accueil">
-  <header>
-    <nav class="menu-wrap">
-      <!-- this checkbox is used to use it's pseudo class checked to make the menu appear -->
-      <input type="checkbox" class="toggler">
-      <div class="hamburger">
-        <!-- this div vill be used to create lines for the humburger -->
-        <div></div>
-      </div>
-
-      <div class="menu">
-        <div>
-          <div>
-
-            <ul class="nav-bar">
-              <li></li>
-              <li><a class="link" href="../index.html">Accueil</a></li>
-              <li><a class="link" href="../me-connaitre/index.html">Me connaître</a></li>
-              <li class="nav-bar-dropdown">
-                <div class="cv-and-arrow-wrapper" id="cv-link">
-                  <a class="link" href="#">CV</a>
-                  <div class="arrow" id="arrow-submenu"></div>
-                </div>
-
-                <ul class="dropdown-list" id="dropdown-submenu">
-                  <li><a class="link submenu-link" href="../cv/index.html">Numérique</a></li>
-                  <li><a class="link submenu-link" href="#">PDF</a></li>
-                  <li><a class="link submenu-link" href="#">À imprimer</a></li>
-                </ul>
-              </li>
-
-              <li><a class="link" href="../portfolio/index.html">Portfolio</a></li>
-              <li><a class="link active" href="../contact/index.html">Contact</a></li>
-              <li><a class="link" href="../mentions-legales/index.html">Mentions Légales</a></li>
-              <li></li>
-            </ul>
-
-          </div>
+    </form>
+    <div class="contact-info">
+      <h1 class="contact-me-title">Me contacter.</h1>
+      <div class="personal-info">
+        <div class="personal-info-icon-wrapper">
+          <img class="personal-info-icon" src="../assets/images/phone-icon.svg" alt="phone icon">
         </div>
+        <p class="personal-info-p">+33 06 95 56 49 93</p>
       </div>
+      <div class="personal-info">
+        <div class="personal-info-icon-wrapper">
+          <img class="personal-info-icon" src="../assets/images/email-icon.svg" alt="email icon">
+        </div>
+        <p class="personal-info-p">anatkachen@gmail.com</p>
+      </div>
+      <div class="personal-info">
+        <div class="personal-info-icon-wrapper">
+          <img class="personal-info-icon" src="../assets/images/github-icon.svg" alt="github icon">
+        </div>
+        <p class="personal-info-p">anaviktoriv</p>
+      </div>
+      <div class="personal-info">
+        <div class="personal-info-icon-wrapper">
+          <img class="personal-info-icon" src="../assets/images/linkedin-icon.svg" alt="linkedin icon">
+        </div>
+        <p class="personal-info-p">My linked in</p>
+      </div>
+    </div>
 
-    </nav>
-  </header>
-
-  <script src="../assets/js/script.js"></script>
-</body>
-
-</html>
+    <?php if (file_exists('../footer.php')) {
+      include_once '../footer.php';
+    } ?>
