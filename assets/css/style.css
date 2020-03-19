@@ -309,6 +309,8 @@ body {
 
 .contact-form {
     background-color: #FBFAFA;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info {
@@ -332,24 +334,87 @@ body {
 }
 
 .personal-info-icon {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
 }
 
 .contact-me-title {
     margin-left: 20px;
     font-family: Roboto, sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.5vh;
     color: #BDC2D5;
 }
 
 .personal-info-p {
     color: #FBFAFA;
     font-family: Montserrat, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.7vh;
     font-weight: medium;
     margin: 10px;
+}
+
+.link-icon-span {
+    height: 100%;
+    background-image: url("../images/link-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(255, 0, 0, 0);
+}
+
+.personal-info-link {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-form {
+    align-items: flex-end;
+    padding-right: 3.5%;
+    padding-left: 3.5%;
+    padding-top: 3.5%;
+}
+
+.form-title {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #1D212E;
+    align-self: flex-start;
+}
+
+.form-input {
+    display: block;
+    border: none;
+    background-color: #EFEFEF;
+    margin-bottom: 3.5vh;
+    font-family: Montserrat, sans-serif;
+    font-weight: medium;
+    /* color: #B9B9B9; */
+    font-size: 0.9rem;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.form-input-small {
+    width: 100%;
+    height: 5vh;
+}
+
+.form-submit {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 20px;
+    background-color: #CD8C50;
+    font-family: Comforta, sans-serif;
+    color: #FBFAFA;
+    border-style: none;
+    height: 3.5vh;
+}
+
+.form-input-textarea {
+    width: 80%;
 }
 
 
@@ -632,6 +697,10 @@ body {
         font-size: 1rem;
         padding: 5px;
     }
+    .personal-info-icon {
+        height: 35px;
+        width: 35px;
+    }
 }
 
 
@@ -875,6 +944,22 @@ body {
         width: 100vw;
         z-index: -1;
     }
+    
+    .contact-form {
+        bottom: 8vh;
+        left: auto;
+        right: 5vh;
+        top: auto;
+        height: 60vh;
+        width: 50vh;
+    }
+    
+    .contact-info {
+        width: 30vh;
+        height: 22vh;
+        left: 5vw;
+        top: 66vh;
+    }
 }
 
 /* -------------------------- ------------SMALL SCREENS ---------------- --------- ---- ---------- */
@@ -1069,6 +1154,24 @@ body {
         width: 100vw;
         z-index: -1;
     }
+    
+    .contact-form {
+        position: absolute;
+        bottom: 8vh;
+        left: auto;
+        right: 5vh;
+        top: auto;
+        height: 60vh;
+        width: 50vh;
+    }
+    
+    .contact-info {
+        position: absolute;
+        width: 30vh;
+        height: 22vh;
+        left: 5vw;
+        top: 66vh;
+    }
 }
 @media only screen and (max-width: 800px) {
     /* ------------------------- ---- --- -------ABOUT ME small /huge phones TABLETS---- ---- ---- ----- ---- ----- --------- */
@@ -1177,23 +1280,40 @@ body {
     .contact-background-img-mobile {
         display: block;
         position: absolute;
-        top: 0;
+        top: -50px;
         left: 0;
         right: 0;
         width: 100vw;
         /* min-height: 100vh; */
         z-index: -1;
     }
-}
-
+    
+    .contact-form {
+        bottom: 5vh;
+        left: 5vw;
+        right: 5vw;
+        top: 45vh;
+        height: 50vh;
+        width: 90vw;
+    }
+    
+    .contact-info {
+        width: 55vw;
+        height: 36vw;
+        left: 10vw;
+        right: auto;
+        top: 33vh;
+    }
 }
 
 /* --------------------------------------PHONES--------------------------------------- */
 @media only screen and (max-width: 750px) {
     /* -------------------------- Portfolio ------------------------ */
+    
     .hero-img-portfolio-tablet {
         display: none;
     }
+    
     .hero-img-portfolio-mobile {
         display: block;
         position: absolute;
@@ -1203,6 +1323,7 @@ body {
         width: 100vw;
         z-index: -1;
     }
+    
     .portfolio-h1 {
         font-size: 2rem;
         margin-bottom: 10vh;
@@ -1215,12 +1336,15 @@ body {
         font-size: 0.4rem;
     }
     /* ---------------------HOMEPAGE MOBILE SCREENS--------------------------------- */
+    
     .name {
         display: none;
     }
+    
     .decorative-line {
         display: none;
     }
+    
     .job-title {
         align-self: flex-start;
         text-align: left;
@@ -1228,21 +1352,26 @@ body {
         font-size: 1rem;
         margin-left: 20px;
     }
+    
     .img-my-photo-homepage-desktop {
         display: none;
     }
+    
     .img-my-photo-homepage-mobile {
         display: block;
         max-height: 80vh;
         align-self: flex-start;
     }
     /* ------------------------ ABOUT ME PAGE MOBILE --------------------------- */
+    
     .background-about-me-tablet {
         display: none;
     }
+    
     .my-photo-about-me {
         display: none;
     }
+    
     .title-and-paragraph-wrapper-about-me {
         width: 80%;
         background-image: url("../images/background-css-aboutme.jpg");
@@ -1253,34 +1382,75 @@ body {
         padding-right: 10px;
         padding-bottom: 10px;
     }
+    
     .background-aboutme-section3-tablet {
         display: none;
         width: 80%;
     }
+    
     .circle-skill-wrapper-all {
         width: 300px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    
     .circle-skill-wrapper {
         width: 45%;
     }
     /* --------------------------------------- PORTFOLIO--------------------------------------- */
+    
     .h1-wrapper-portfolio {
         /* self-align: center; */
-        
         width: 60vw;
     }
+    
     .portfolio-h1 {
         font-size: 2.5rem;
         margin-bottom: 20vh;
     }
+    /* ----------- ------------ ------ CONTACT ------- -------------- ------------- */
+    
+    .main-content-wrapper-contact {
+        height: 150vh;
+    }
+    
+    .contact-background-img-mobile {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        z-index: -1;
+    }
+    
+    .contact-form {
+        bottom: 40px;
+        left: 5vw;
+        right: 5vw;
+        top: auto;
+        height: 80vh;
+        width: 90vw;
+    }
+    
+    .contact-info {
+        width: 75vw;
+        height: 56vw;
+        left: 8vw;
+        right: 17vw;
+        top: 45vh;
+    }
+    
+    .personal-info-icon {
+        height: 25px;
+        width: 25px;
+    }
 }
 @media only screen and (max-width: 420px) {
     /* --------------------------------------- PORTFOLIO--------------------------------------- */
+    
     .h1-wrapper-portfolio {
         width: 40vw;
     }
+    
     .portfolio-h1 {
         font-size: 1.7rem;
         margin-bottom: 15vh;
@@ -1290,6 +1460,7 @@ body {
 /* TODO FIND WHAT I MEAN BY THIS CODE */
 @media only screen and (max-width: 600px) {
     /* ---- ----- ----- ABOUT ME ----- ---- ----- */
+    
     .title-and-paragraph-wrapper-about-me {
         margin-top: 90px;
     }
