@@ -31,6 +31,8 @@ switch($named) {
           return "Me Conaître";
      case "contact": 
           return "Contact";
+    case "mentions":
+          return "Mentions légales";
 }
 }
 

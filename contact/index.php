@@ -20,7 +20,7 @@ if (file_exists('../head.php')) {
 <input class="form-input form-input-small" type="text" placeholder="Nom et prénom">
 <input class="form-input form-input-small" type="email" placeholder="Email">
 <textarea class="form-input form-input-textarea" name="" id="" rows="10" placeholder="Message"></textarea>
-<input class="form-submit"type="submit" value="ENVOYER">
+<input class="form-submit" type="submit" value="ENVOYER">
     </form>
 
     <div class="contact-info">

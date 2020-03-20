@@ -23,6 +23,10 @@ body {
     background-color: #d7d4cf;
 }
 
+.body-mentions-legales {
+    margin: 15px;
+}
+
 .link-footer {
     text-transform: uppercase;
     display: block;
@@ -171,6 +175,40 @@ body {
     flex-wrap: wrap;
     align-self: center;
     justify-content: center;
+}
+
+.section-four-aboutme-languages {
+    /* background-color: #bdc2d5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.section-five-aboutme-buttons {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FBFAFA;
+    /* height: 100px; */
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.cv-btn {
+    -webkit-appearance: none;
+    background-color: #CD8C50;
+    color: #FBFAFA;
+    font-family: Comfortaa, sans-serif;
+    font-size: 1rem;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 26px;
+    border-style: none;
+    height: 40px;
+    width: 350px;
+    margin: 15px;
 }
 
 
@@ -411,11 +449,33 @@ body {
     color: #FBFAFA;
     border-style: none;
     height: 3.5vh;
+    width: 11.5vh;
 }
 
 .form-input-textarea {
     width: 80%;
 }
+
+.h1-mentions {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.h2-mentions {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.p-mentions {
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 1rem;
+}
+
+
+/* ---- ------ ----- MENTIONS LEGALES ----- ----- ----- */
 
 
 /* ---------------------------------------Big Screens --------- ---------------- ------------- */
@@ -551,6 +611,9 @@ body {
         width: 100px;
         height: 100px;
     }
+    .languages {
+        width: 60vw;
+    }
     /* ------- ---------- ---------- PORTFOLIO SMALL DESKTOPS -------------------------------- */
     .hero-image-and-title-wrapper-portfolio {
         height: 100vh;
@@ -654,6 +717,9 @@ body {
         position: absolute;
         left: 28vw;
         top: 55vh;
+    }
+    .form-submit {
+        font-size: 1rem;
     }
 }
 
@@ -1159,7 +1225,7 @@ body {
         position: absolute;
         bottom: 8vh;
         left: auto;
-        right: 5vh;
+        right: 4vh;
         top: auto;
         height: 60vh;
         width: 50vh;
@@ -1169,6 +1235,25 @@ body {
         position: absolute;
         width: 30vh;
         height: 22vh;
+        left: 4vw;
+        top: 66vh;
+    }
+}
+
+/* --- ---- ---- TABLETS LANDSCAPE ---- ---- ---- ----  */
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+    .contact-form {
+        bottom: 6vh;
+        left: auto;
+        right: 5vh;
+        top: auto;
+        height: 64vh;
+        width: 60vw;
+    }
+    
+    .contact-info {
+        width: 30vw;
+        height: 26vh;
         left: 5vw;
         top: 66vh;
     }
@@ -1270,6 +1355,7 @@ body {
     
     .main-content-wrapper-contact {
         width: 100vw;
+        height: 150vh;
         overflow: hidden;
     }
     
@@ -1292,8 +1378,8 @@ body {
         bottom: 5vh;
         left: 5vw;
         right: 5vw;
-        top: 45vh;
-        height: 50vh;
+        /* top: 45vh; */
+        height: 70vh;
         width: 90vw;
     }
     
@@ -1302,7 +1388,55 @@ body {
         height: 36vw;
         left: 10vw;
         right: auto;
-        top: 33vh;
+        top: 40vh;
+    }
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .main-content-wrapper-contact {
+        height: 1000px;
+    }
+    
+    .contact-form {
+        left: 5vw;
+        right: 5vw;
+        top: 450px;
+        height: 550px;
+        width: 90vw;
+        justify-content: center;
+    }
+    
+    .contact-info {
+        width: 400px;
+        height: 220px;
+        left: 8vw;
+        right: 17vw;
+        top: 250px;
+    }
+    
+    .personal-info-icon {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .personal-info-p {
+        font-size: 0.9rem;
+    }
+    
+    .form-input-small {
+        height: 40px;
+    }
+    
+    .form-submit {
+        height: 30px;
+        width: 90px;
+    }
+    
+    .contact-me-title {
+        font-size: 1.1rem;
+    }
+    
+    .personal-info-p {
+        font-size: 0.9rem;
     }
 }
 
@@ -1335,7 +1469,7 @@ body {
     .link-footer {
         font-size: 0.4rem;
     }
-    /* ---------------------HOMEPAGE MOBILE SCREENS--------------------------------- */
+    /* ----------- ---- ----- -HOMEPAGE MOBILE SCREENS --------- -------- ---------------- */
     
     .name {
         display: none;
@@ -1397,6 +1531,12 @@ body {
     .circle-skill-wrapper {
         width: 45%;
     }
+    
+    .section-four-aboutme-languages {
+        background-color: #896B92;
+        padding: 40px;
+        margin: 0;
+    }
     /* --------------------------------------- PORTFOLIO--------------------------------------- */
     
     .h1-wrapper-portfolio {
@@ -1411,7 +1551,7 @@ body {
     /* ----------- ------------ ------ CONTACT ------- -------------- ------------- */
     
     .main-content-wrapper-contact {
-        height: 150vh;
+        height: 1050px;
     }
     
     .contact-background-img-mobile {
@@ -1423,25 +1563,33 @@ body {
     }
     
     .contact-form {
-        bottom: 40px;
         left: 5vw;
         right: 5vw;
-        top: auto;
-        height: 80vh;
+        top: 450px;
+        height: 550px;
         width: 90vw;
+        justify-content: center;
     }
     
     .contact-info {
         width: 75vw;
-        height: 56vw;
+        height: 220px;
         left: 8vw;
         right: 17vw;
-        top: 45vh;
+        top: 250px;
     }
     
     .personal-info-icon {
         height: 25px;
         width: 25px;
+    }
+    
+    .personal-info-p {
+        font-size: 0.9rem;
+    }
+    
+    .contact-me-title {
+        font-size: 1.1rem;
     }
 }
 @media only screen and (max-width: 420px) {

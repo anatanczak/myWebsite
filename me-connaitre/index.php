@@ -197,6 +197,16 @@ if (file_exists('../head.php')) {
         </div>
       </div>
     </section>
+
+<section class="section-four-aboutme-languages">
+<img class="languages" src="../assets/images/languages-dark.svg" alt="languages mastery level">
+</section>
+
+<section class="section-five-aboutme-buttons">
+        <button class="cv-btn" onclick="window.location.href='../cv/index.php'">Voir cv version numerique</button>
+<button class="cv-btn" onclick="window.location.href='../assets/files/tanczak-cv.pdf'" download>Télécharger cv version design</button>
+<button class="cv-btn" onclick="window.location.href='../assets/files/tanczak-cv-print.pdf'" download>Télécharger cv version imprimable</button>
+</section>
     <?php if (file_exists('../footer.php')) {
         include_once '../footer.php';
       } ?>

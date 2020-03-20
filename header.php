@@ -23,8 +23,6 @@
 
               <li><a class="link <?php if (isset($pageName)) { if ($pageName == "aboutMe"){echo "active";}}?> " href="<?php if (isset($pageName)) { if ($pageName == "homepage"){echo "me-connaitre/index.php";}else{echo "../me-connaitre/index.php";}}?>">Me connaître</a></li>
 
-              <li><a class="link <?php if (isset($pageName)) { if ($pageName == "cv"){echo "active";}}  ?> " href="<?php if (isset($pageName)) { if ($pageName == "homepage"){echo "cv/index.php";}else{echo "../cv/index.php";}}?>">CV</a></li>
-
               <li><a class="link <?php if (isset($pageName)) { if ($pageName == "portfolio"){echo "active";}}  ?> " href="<?php if (isset($pageName)) { if ($pageName == "homepage"){echo "portfolio/index.php";}else{echo "../portfolio/index.php";}}?>">Portfolio</a></li>
 
               <li><a class="link <?php if (isset($pageName)) { if ($pageName == "contact"){echo "active";}}  ?> " href="<?php if (isset($pageName)) { if ($pageName == "homepage"){echo "contact/index.php";}else{echo "../contact/index.php";}}?>">Contact</a></li>

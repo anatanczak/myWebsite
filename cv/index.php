@@ -21,11 +21,11 @@
       <!-- this div is a wrapper for image and it's position is relative so that the div contaner for one and two can be positioned over the image using abslute postion and  bottom left top right 0-->
 
       <div class="image-and-divcont-wrapper">
+         <div class="goback-link-wrapper"> 
+               <a class="goback-link" href="../me-connaitre/index.php">Retour</a>
+        </div>
  
         <img class="deco-img-desktop" src="images/deco-top-desktop.svg" alt="image decorative">
-        <?php if (file_exists('../header.php')) {
-        include_once '../header.php';
-      } ?>
         <div class="div-container-one-and-two">
           <div class="div-item-one">
             <img class="img-deco" src="images/deco-top.svg" alt="decoration">

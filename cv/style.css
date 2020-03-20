@@ -28,6 +28,30 @@ p {
 }
 
 
+/* RETURN BUTTON */
+
+.goback-link-wrapper {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 150px;
+    background-color: #896B92;
+    opacity: 0.8;
+    border-radius: 10px;
+    z-index: 3;
+    justify-content: center;
+}
+
+.goback-link {
+    text-decoration: none;
+    color: #FBFAFA;
+    font-size: 1rem;
+    align-self: center;
+}
+
+
 /* prepare container to be lower layer */
 
 .image-and-divcont-wrapper {
