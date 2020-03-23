@@ -474,6 +474,68 @@ body {
     font-size: 1rem;
 }
 
+.error-message {
+    margin: 2px;
+    color: #fc0349;
+    font-family: Montserrat, sans-serif;
+    font-weight: medium;
+}
+
+
+/* Success popup page*/
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #FBFAFA; */
+    background-image: url("../images/repeat-concrete.jpg");
+    background-repeat: repeat;
+}
+
+.popup-text-and-button-wrapper {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 260px;
+    width: 400px;
+    background-color: #1D212E;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 6px 9px #00000029;
+}
+
+.popup-check-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.h1-success {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: #bdc2d5;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.popup-ok-btn {
+    -webkit-appearance: none;
+    background-color: #CD8C50;
+    color: #FBFAFA;
+    font-family: Comfortaa, sans-serif;
+    font-size: 1rem;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 26px;
+    border-style: none;
+    height: 30px;
+    width: 200px;
+}
+
 
 /* ---- ------ ----- MENTIONS LEGALES ----- ----- ----- */
 
@@ -1602,6 +1664,11 @@ body {
     .portfolio-h1 {
         font-size: 1.7rem;
         margin-bottom: 15vh;
+    }
+    /* Success POPUP PAGE */
+    
+    .popup-text-and-button-wrapper {
+        width: 90vw;
     }
 }
 
