@@ -410,9 +410,9 @@ body {
 
 .contact-form {
     align-items: flex-end;
-    padding-right: 3.5%;
-    padding-left: 3.5%;
-    padding-top: 3.5%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 .form-title {
@@ -449,11 +449,13 @@ body {
     color: #FBFAFA;
     border-style: none;
     height: 3.5vh;
-    width: 11.5vh;
+    min-width: 11.5vw;
+    margin-bottom: 20px;
 }
 
 .form-input-textarea {
     width: 80%;
+    flex: 2;
 }
 
 .h1-mentions {
@@ -768,20 +770,21 @@ body {
     }
     .contact-form {
         width: 60vh;
-        height: 65vh;
+        min-height: 70vh;
         position: absolute;
         left: 50vw;
         top: 22vh;
     }
     .contact-info {
         width: 41vh;
-        height: 26vh;
+        min-height: 26vh;
         position: absolute;
         left: 28vw;
         top: 55vh;
     }
     .form-submit {
         font-size: 1rem;
+        margin-bottom: 20px;
     }
 }
 
