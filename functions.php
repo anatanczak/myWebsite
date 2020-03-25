@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+
+
+
 function getLinkOfCurrentPage(){
     if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
         $url = "https://";
@@ -43,4 +46,18 @@ function sanitizeInputFromString(string $stringToSanitize){
     $outputString = trim($outputString);
     $outputString = htmlspecialchars($outputString);
     return $outputString;
+}
+
+// insertIntoDB functions
+
+function insertValuesInDB(string $name, string $email, string $message) {
+$db = connectToDB ();
+// prepared statement
+$addNewUserQuery = "INSERT INTO users (user_name, user_email, user_message) VALUES (:userName, :useEmail, :userMessage)";
+$addUser = $db->prepare($addNewUserQuery);
+$addUser->execute([
+'userName' => $name, 
+'useEmail' => $email,
+'userMessage' => $message
+]);
 }
