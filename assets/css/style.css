@@ -110,7 +110,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.colored-dot-about-me {
+.colored-dot-for-titles {
     color: #BDC2D5;
 }
 
@@ -250,18 +250,20 @@ body {
     align-content: center;
 }
 
-.meslistes-title {
+.portfolio-title-h2 {
     font-family: Roboto, sans-serif;
     font-weight: 700;
     align-self: flex-start;
 }
 
-.meslistes-p {
+.portfolio-p {
     font-family: Montserrat, sans-serif;
-    font-weight: medium;
     color: #1D212E;
-    text-align: justify;
     line-height: 1.6;
+}
+
+.meslistes-p {
+    text-align: justify;
 }
 
 .text-and-title-meslistes-wrapper {
@@ -323,6 +325,59 @@ body {
 }
 
 .meslistes-wallpaper-lm-mobile {
+    display: none;
+}
+
+.landing-page-img-desktop {
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+
+.landing-page-img-mobile {
+    display: none;
+}
+
+.portfolio-title-h2-landing-page,
+.portfolio-p-landing-page {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.portfolio-p-landing-page {
+    padding-bottom: 3%;
+}
+
+.landing-page-link {
+    appearance: none;
+    -webkit-appearance: none;
+    /* text-decoration: none; */
+    font-family: inherit;
+    color: #CD8C50;
+}
+
+.landing-page-link-icon {
+    max-height: 0.8rem;
+    max-width: auto;
+}
+
+.buddha-img-wrapper {
+    display: none;
+}
+
+.success-builder-phones-desktop-img {
+    display: none;
+}
+
+.success-builder-phones-mobile-img {
+    display: none;
+}
+
+.success-builder-wallpaper-desktop-img {
+    display: none;
+}
+
+.success-builder-wallpaper-mobile-img {
     display: none;
 }
 
@@ -722,10 +777,10 @@ body {
         padding-left: 5%;
         padding-right: 5%;
     }
-    .meslistes-title {
+    .portfolio-title-h2 {
         font-size: 1.5rem;
     }
-    .meslistes-p {
+    .portfolio-p {
         font-size: 1rem;
     }
     .meslistes-video-wrapper {
@@ -745,11 +800,40 @@ body {
         width: 10vw;
         font-size: 0.7rem;
     }
+    .meslistes-lm-phones-wrapper {
+        order: 5;
+    }
     .meslistes-iphones-lm-desktop {
         display: block;
         width: 80vw;
     }
+    .meslistes-lm-wallpaper-wrapper {
+        margin-top: 30px;
+    }
     .meslistes-wallpaper-lm-desktop {
+        display: block;
+        width: 100vw;
+    }
+    .success-builder-h2-p-wrapper {
+        width: 50%;
+        padding-left: 3%;
+    }
+    .succes-builder-img-and-text-wrapper {
+        display: flex;
+        padding: 5%;
+    }
+    .buddha-img-wrapper {
+        display: block;
+        width: 40%;
+    }
+    .buddha-img {
+        max-width: 35vw;
+    }
+    .success-builder-phones-desktop-img {
+        display: block;
+        max-width: 50vw;
+    }
+    .success-builder-wallpaper-desktop-img {
         display: block;
         width: 100vw;
     }
@@ -834,17 +918,13 @@ body {
     }
 }
 
-
-}
 @media only screen and (min-width: 1600px) {
     /* -----------------large DESKTOPS HOMEPAGE---------------------- */
-    
     .name {
         font-size: 3.121rem;
         letter-spacing: 0.65rem;
         margin-bottom: 1.3rem;
     }
-    
     .job-title {
         font-size: 1.75rem;
         width: 80%;
@@ -852,41 +932,42 @@ body {
         margin-top: 1.3rem;
     }
     /* --------------------------------------Portfolio------------------------------------ */
-    
-    .meslistes-title {
+    .portfolio-title-h2 {
         font-size: 2.25rem;
     }
-    
-    .meslistes-p {
+    .portfolio-p {
         font-size: 1.5rem;
     }
-    
     .meslistes-download-btn {
         height: 50px;
         width: 12vw;
         font-size: 1.2rem;
     }
+    .landing-page-link-icon {
+        max-height: 1.2rem;
+        max-width: auto;
+    }
 }
+
 @media only screen and (min-width: 1650px) {
     /* --------------------------------------ABOUT ME PAGE------------------------------------ */
-    
     .title-and-paragraph-wrapper-about-me {
         margin-right: 70px;
         width: 35%;
     }
 }
+
 @media only screen and (min-width: 1800px) {
     /* --------------------------------------ABOUT ME PAGE------------------------------------ */
-    
     .title-and-paragraph-wrapper-about-me {
         margin-right: 150px;
     }
     /* --------------------------------------Portfolio------------------------------------ */
-    
     .portfolio-h1 {
         font-size: 3.938rem;
     }
 }
+
 @media only screen and (min-width: 1920px) {
     .contact-background-img-desktop {
         left: auto;
@@ -894,18 +975,18 @@ body {
     }
 }
 
+
 /* ------------------------iPAD PRO PORTRAIT------------------------ */
+
 @media only screen and (max-width: 1050px) and (orientation: portrait) {
     .content-wrapper {
         height: 100vh;
         width: 100vw;
         overflow: hidden;
     }
-    
     .backgound-image {
         display: none;
     }
-    
     .background-image-tablet {
         display: block;
         position: absolute;
@@ -915,14 +996,12 @@ body {
         z-index: -1;
         width: 100vw;
     }
-    
     .main-content {
         padding: 0;
         flex-direction: column;
         height: 100vh;
         justify-content: space-between;
     }
-    
     .title-wrapper {
         margin-top: 20%;
         align-self: center;
@@ -930,26 +1009,21 @@ body {
         align-items: center;
         align-content: center;
     }
-    
     .name {
         font-size: 3.125rem;
     }
-    
     .job-title {
         max-width: 70%;
     }
-    
     .img-my-photo-homepage-desktop {
         align-self: flex-end;
         max-height: 80vh;
         max-width: 60vw;
     }
     /* ----------------------- ABOUT ME iPAD PRO PORTRAIT -   ---------------- */
-    
     .background-desktop-about-me {
         display: none;
     }
-    
     .background-about-me-tablet {
         display: block;
         position: absolute;
@@ -958,32 +1032,26 @@ body {
         width: 100vw;
         z-index: -1;
     }
-    
     .section-one-and-navbar-wprapper {
         height: 100%;
     }
-    
     .title-and-paragraph-wrapper-about-me {
         width: 60%;
         margin-top: 15%;
     }
-    
     .my-photo-about-me {
         max-width: 40%;
         height: auto;
         margin-left: -15%;
     }
-    
     .section-three-about-me {
         position: relative;
         overflow: hidden;
         width: 100vw;
     }
-    
     .background-aboutme-section3 {
         display: none;
     }
-    
     .background-aboutme-section3-tablet {
         display: block;
         position: absolute;
@@ -993,20 +1061,17 @@ body {
         height: auto;
         z-index: -1;
     }
-    
     .circle-skill-wrapper-all {
         width: 500px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    
     .circle-skill {
         margin: 15px;
         width: 100px;
         height: 100px;
     }
     /* -------- --------- ----------- PORFOLIO ---------- --------- ---------- */
-    
     .hero-image-and-title-wrapper-portfolio {
         height: 100vh;
         width: 100vw;
@@ -1015,11 +1080,9 @@ body {
         align-content: center;
         justify-content: space-between;
     }
-    
     .hero-img-portfolio-desktop {
         display: none;
     }
-    
     .hero-img-portfolio-tablet {
         display: block;
         position: absolute;
@@ -1029,43 +1092,35 @@ body {
         width: 100vw;
         z-index: -1;
     }
-    
     .h1-wrapper-portfolio {
         width: 100vw;
         text-align: center;
         height: 20vh;
         flex: 0;
     }
-    
     .portfolio-h1 {
         font-size: 2.7rem;
         margin-bottom: 25vh;
     }
-    
     .meslistes-img-darkmode-deskt {
         display: none;
     }
-    
     .meslistes-img-darkmode-tablet {
         display: block;
         max-width: 50vw;
     }
-    
     .meslistes-iphone-dm {
         max-width: 40vw;
     }
     /* -------- ------------ ----- CONTACT IPAD PRO------ ---------- ----------- */
-    
     .main-content-wrapper-contact {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
     }
-    
     .contact-background-img-desktop {
         display: none;
     }
-    
     .contact-background-img-tablet {
         display: block;
         position: absolute;
@@ -1075,7 +1130,6 @@ body {
         width: 100vw;
         z-index: -1;
     }
-    
     .contact-form {
         bottom: 8vh;
         left: auto;
@@ -1084,7 +1138,6 @@ body {
         height: 60vh;
         width: 50vh;
     }
-    
     .contact-info {
         width: 30vh;
         height: 22vh;
@@ -1093,20 +1146,19 @@ body {
     }
 }
 
+
 /* -------------------------- ------------SMALL SCREENS ---------------- --------- ---- ---------- */
+
 @media only screen and (max-width: 1023px) {
     /* ---------------------HOMEPAGE TABLET SCREENS ---------------------- ----------- */
-    
     .content-wrapper {
         height: 100vh;
         width: 100vw;
         overflow: hidden;
     }
-    
     .backgound-image {
         display: none;
     }
-    
     .background-image-tablet {
         position: absolute;
         top: 0;
@@ -1115,14 +1167,12 @@ body {
         z-index: -1;
         width: 100vw;
     }
-    
     .main-content {
         padding: 0;
         flex-direction: column;
         height: 100vh;
         justify-content: space-between;
     }
-    
     .title-wrapper {
         margin-top: 20%;
         align-self: center;
@@ -1130,29 +1180,23 @@ body {
         align-items: center;
         align-content: center;
     }
-    
     .name {
         font-size: 3.125rem;
     }
-    
     .job-title {
         max-width: 70%;
     }
-    
     .img-my-photo-homepage-desktop {
         max-height: 70vh;
         align-self: flex-end;
     }
-    
     .img-my-photo-homepage-mobile {
         display: none;
     }
     /* ------------------------- ---- --- -------ABOUT ME TABLETS---- ---- ---- ----- ---- ----- --------- */
-    
     .background-desktop-about-me {
         display: none;
     }
-    
     .background-about-me-tablet {
         position: absolute;
         top: 0;
@@ -1160,29 +1204,24 @@ body {
         width: 100vw;
         z-index: -1;
     }
-    
     .title-and-paragraph-wrapper-about-me {
         margin-top: 20%;
         width: 50%;
     }
-    
     .my-photo-about-me {
         display: block;
         height: 50vh;
         align-self: flex-end;
         margin-left: -25%;
     }
-    
     .section-three-about-me {
         position: relative;
         overflow: hidden;
         width: 100vw;
     }
-    
     .background-aboutme-section3 {
         display: none;
     }
-    
     .background-aboutme-section3-tablet {
         position: absolute;
         top: 0;
@@ -1191,20 +1230,17 @@ body {
         height: auto;
         z-index: -1;
     }
-    
     .circle-skill-wrapper-all {
         width: 500px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    
     .circle-skill {
         margin: 15px;
         width: 100px;
         height: 100px;
     }
     /* ------------------------- ---- --- -------PORTFOLIO TABLETS---- ---- ---- ----- ---- ----- --------- */
-    
     .hero-image-and-title-wrapper-portfolio {
         height: 100vh;
         width: 100vw;
@@ -1213,7 +1249,6 @@ body {
         align-content: center;
         justify-content: space-between;
     }
-    
     .hero-img-portfolio-tablet {
         display: block;
         position: absolute;
@@ -1223,59 +1258,69 @@ body {
         width: 100vw;
         z-index: -1;
     }
-    
     .h1-wrapper-portfolio {
         text-align: center;
     }
-    
     .portfolio-h1 {
         font-size: 2.7rem;
         margin-bottom: 25vh;
     }
-    
     .meslistes-img-darkmode-tablet {
         display: block;
     }
-    
     .text-and-title-meslistes-wrapper {
         width: 50%;
         padding-left: 20px;
     }
-    
     .meslistes-dm-iphone-and-button-wrapper {
         width: 50%;
     }
-    
     .meslistes-iphone-dm {
         max-width: 40vw;
     }
-    
     .meslistes-video {
         max-width: 50vw;
     }
-    
     .meslistes-download-btn {
         height: 30px;
         width: 12vh;
     }
-    
+    .meslistes-lm-phones-wrapper {
+        display: flex;
+        justify-content: center;
+    }
     .meslistes-iphones-lm-mobile {
         display: block;
         width: 90vw;
     }
-    
     .meslistes-wallpaper-lm-mobile {
         display: block;
         width: 100vw;
     }
+    .success-builder-h2-p-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .portfolio-ul {
+        align-self: flex-start;
+    }
+    .success-builder-phones-mobile-img {
+        display: block;
+        max-width: 80vw;
+    }
+    .success-builder-wallpaper-mobile-img {
+        display: block;
+        width: 100vw;
+    }
     /* -------- ------------ ----- CONTACT TABLETS------ ---------- ----------- */
-    
     .main-content-wrapper-contact {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
     }
-    
     .contact-background-img-tablet {
         display: block;
         position: absolute;
@@ -1285,7 +1330,6 @@ body {
         width: 100vw;
         z-index: -1;
     }
-    
     .contact-form {
         position: absolute;
         bottom: 8vh;
@@ -1295,7 +1339,6 @@ body {
         height: 60vh;
         width: 50vh;
     }
-    
     .contact-info {
         position: absolute;
         width: 30vh;
@@ -1305,7 +1348,9 @@ body {
     }
 }
 
+
 /* --- ---- ---- TABLETS LANDSCAPE ---- ---- ---- ----  */
+
 @media only screen and (max-width: 1023px) and (orientation: landscape) {
     .contact-form {
         bottom: 6vh;
@@ -1315,7 +1360,6 @@ body {
         height: 64vh;
         width: 60vw;
     }
-    
     .contact-info {
         width: 30vw;
         height: 26vh;
@@ -1323,64 +1367,54 @@ body {
         top: 66vh;
     }
 }
+
 @media only screen and (max-width: 800px) {
     /* ------------------------- ---- --- -------ABOUT ME small /huge phones TABLETS---- ---- ---- ----- ---- ----- --------- */
-    
     .title-and-paragraph-wrapper-about-me {
         margin-top: 15%;
         width: 60%;
         margin-left: -7%;
     }
-    
     .h1-about-me {
         font-size: 1.7rem;
         font-weight: 700;
     }
-    
     .text-about-me {
         font-size: 0.8rem;
         font-weight: 400;
         line-height: 1.4;
     }
-    
     .my-photo-about-me {
         height: 40vh;
         align-self: flex-end;
         margin-left: -30%;
     }
     /* ------------------ PORTFOLIO ------------------ */
-    
     .meslistes-img-darkmode-wrapper {
         display: flex;
         justify-content: center;
         width: 100%;
         order: 1;
     }
-    
     .meslistes-img-darkmode-tablet {
         display: none;
     }
-    
     .meslistes-img-darkmode-mobile {
         display: block;
         max-width: 80vw;
     }
-    
     .text-and-title-meslistes-wrapper {
         width: 100%;
         order: 2;
         padding: 3% 10%;
     }
-    
     .meslistes-iphone-dm {
         display: none;
     }
-    
     .meslistes-iphone-dm-mobile {
         display: block;
         max-width: 80vw;
     }
-    
     .meslistes-video-wrapper {
         display: flex;
         justify-content: center;
@@ -1389,45 +1423,44 @@ body {
         padding-top: 3%;
         padding-bottom: 3%;
     }
-    
     .meslistes-video {
         max-width: 80vw;
     }
-    
     .meslistes-p {
         text-align: left;
     }
-    
     .meslistes-dm-iphone-and-button-wrapper {
         width: 100%;
         order: 3;
     }
-    
     .meslistes-download-btn {
         height: 35px;
         width: 200px;
         font-size: 0.7rem;
     }
-    
     .meslistes-lm-phones-wrapper {
         order: 5;
     }
-    
     .meslistes-lm-wallpaper-wrapper {
         order: 6;
     }
+    .landing-page-img-desktop {
+        display: none;
+    }
+    .landing-page-img-mobile {
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
     /* -------- ------------ ----- CONTACT PHONES------ ---------- ----------- */
-    
     .main-content-wrapper-contact {
         width: 100vw;
         height: 150vh;
         overflow: hidden;
     }
-    
     .contact-background-img-tablet {
         display: none;
     }
-    
     .contact-background-img-mobile {
         display: block;
         position: absolute;
@@ -1438,7 +1471,6 @@ body {
         /* min-height: 100vh; */
         z-index: -1;
     }
-    
     .contact-form {
         bottom: 5vh;
         left: 5vw;
@@ -1447,7 +1479,6 @@ body {
         height: 70vh;
         width: 90vw;
     }
-    
     .contact-info {
         width: 55vw;
         height: 36vw;
@@ -1456,11 +1487,11 @@ body {
         top: 40vh;
     }
 }
+
 @media only screen and (max-width: 900px) and (orientation: landscape) {
     .main-content-wrapper-contact {
         height: 1000px;
     }
-    
     .contact-form {
         left: 5vw;
         right: 5vw;
@@ -1469,7 +1500,6 @@ body {
         width: 90vw;
         justify-content: center;
     }
-    
     .contact-info {
         width: 400px;
         height: 220px;
@@ -1477,42 +1507,36 @@ body {
         right: 17vw;
         top: 250px;
     }
-    
     .personal-info-icon {
         height: 25px;
         width: 25px;
     }
-    
     .personal-info-p {
         font-size: 0.9rem;
     }
-    
     .form-input-small {
         height: 40px;
     }
-    
     .form-submit {
         height: 30px;
         width: 90px;
     }
-    
     .contact-me-title {
         font-size: 1.1rem;
     }
-    
     .personal-info-p {
         font-size: 0.9rem;
     }
 }
 
+
 /* --------------------------------------PHONES--------------------------------------- */
+
 @media only screen and (max-width: 750px) {
     /* -------------------------- Portfolio ------------------------ */
-    
     .hero-img-portfolio-tablet {
         display: none;
     }
-    
     .hero-img-portfolio-mobile {
         display: block;
         position: absolute;
@@ -1522,28 +1546,26 @@ body {
         width: 100vw;
         z-index: -1;
     }
-    
     .portfolio-h1 {
         font-size: 2rem;
         margin-bottom: 10vh;
     }
 }
 
+
 /* Less than 600 */
+
 @media only screen and (max-width: 600px) {
     .link-footer {
         font-size: 0.4rem;
     }
     /* ----------- ---- ----- -HOMEPAGE MOBILE SCREENS --------- -------- ---------------- */
-    
     .name {
         display: none;
     }
-    
     .decorative-line {
         display: none;
     }
-    
     .job-title {
         align-self: flex-start;
         text-align: left;
@@ -1551,26 +1573,21 @@ body {
         font-size: 1rem;
         margin-left: 20px;
     }
-    
     .img-my-photo-homepage-desktop {
         display: none;
     }
-    
     .img-my-photo-homepage-mobile {
         display: block;
         max-height: 80vh;
         align-self: flex-start;
     }
     /* ------------------------ ABOUT ME PAGE MOBILE --------------------------- */
-    
     .background-about-me-tablet {
         display: none;
     }
-    
     .my-photo-about-me {
         display: none;
     }
-    
     .title-and-paragraph-wrapper-about-me {
         width: 80%;
         background-image: url("../images/background-css-aboutme.jpg");
@@ -1581,44 +1598,36 @@ body {
         padding-right: 10px;
         padding-bottom: 10px;
     }
-    
     .background-aboutme-section3-tablet {
         display: none;
         width: 80%;
     }
-    
     .circle-skill-wrapper-all {
         width: 300px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    
     .circle-skill-wrapper {
         width: 45%;
     }
-    
     .section-four-aboutme-languages {
         background-color: #896B92;
         padding: 40px;
         margin: 0;
     }
     /* --------------------------------------- PORTFOLIO--------------------------------------- */
-    
     .h1-wrapper-portfolio {
         /* self-align: center; */
         width: 60vw;
     }
-    
     .portfolio-h1 {
         font-size: 2.5rem;
         margin-bottom: 20vh;
     }
     /* ----------- ------------ ------ CONTACT ------- -------------- ------------- */
-    
     .main-content-wrapper-contact {
         height: 1050px;
     }
-    
     .contact-background-img-mobile {
         top: 0;
         left: 0;
@@ -1626,7 +1635,6 @@ body {
         width: 100vw;
         z-index: -1;
     }
-    
     .contact-form {
         left: 5vw;
         right: 5vw;
@@ -1635,7 +1643,6 @@ body {
         width: 90vw;
         justify-content: center;
     }
-    
     .contact-info {
         width: 75vw;
         height: 220px;
@@ -1643,45 +1650,42 @@ body {
         right: 17vw;
         top: 250px;
     }
-    
     .personal-info-icon {
         height: 25px;
         width: 25px;
     }
-    
     .personal-info-p {
         font-size: 0.9rem;
     }
-    
     .contact-me-title {
         font-size: 1.1rem;
     }
 }
+
 @media only screen and (max-width: 420px) {
     /* --------------------------------------- PORTFOLIO--------------------------------------- */
-    
     .h1-wrapper-portfolio {
         width: 40vw;
     }
-    
     .portfolio-h1 {
         font-size: 1.7rem;
         margin-bottom: 15vh;
     }
     /* Success POPUP PAGE */
-    
     .popup-text-and-button-wrapper {
         width: 90vw;
     }
 }
 
+
 /* TODO FIND WHAT I MEAN BY THIS CODE */
+
 @media only screen and (max-width: 600px) {
     /* ---- ----- ----- ABOUT ME ----- ---- ----- */
-    
     .title-and-paragraph-wrapper-about-me {
         margin-top: 90px;
     }
 }
+
 
 /* end */

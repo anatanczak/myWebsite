@@ -17,7 +17,7 @@ if (file_exists('../head.php')) {
       <section class="section-one-about-me">
         <img class="my-photo-about-me" src="../assets/images/meme.png" alt="my photo">
         <div class="title-and-paragraph-wrapper-about-me">
-          <h1 class="h1-about-me">Bonjour<span class="colored-dot-about-me">.</span></h1>
+          <h1 class="h1-about-me">Bonjour<span class="colored-dot-for-titles">.</span></h1>
           <p class="text-about-me">Mon parcours en tant que développeuse a commencé il y 3 ans quand j'ai décidé de suivre le MOOC d’initiation à la programmation de l’Université d’Harvard. N’ayant aucune expérience dans le développement j'ai trouvé
             ce cours passionnant et très stimulant : j'ai été complètement conquise par le monde de la programmation.</p>
           <p class="text-about-me">Après ce MOOC, je me suis lancée dans le développement iOS, ce qui est devenu mon hobby en parallèle de mon activité professionnelle d’enseignante d’anglais pour l’Éducation Nationale.</p>
