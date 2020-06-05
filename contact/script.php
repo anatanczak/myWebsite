@@ -4,8 +4,8 @@ if (file_exists("../functions.php")){
 require_once ("../functions.php");
 }
 
-if (file_exists("../db_config.php")){
-require_once ("../db_config.php");
+if (file_exists("/home4/anavidev/db-config-files/anastasiatanczak/db_config.php")){
+require_once ("/home4/anavidev/db-config-files/anastasiatanczak/db_config.php");
 }
 
 $db = connectToDB ();
@@ -24,21 +24,21 @@ $messageIsValid = false;
 // Regex
 
 // name
-if(empty($name)){
+if(empty($name) || strlen($name > 50)){
 $nameError = "Le nom n'est pas valide.";
 } else {
 $nameIsValid = true;
 }
 
 // email
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+if (filter_var($email, FILTER_VALIDATE_EMAIL) && strlen($email) < 50) {
 $emailISValid = true;
 } else {
 $emailError = "Email n'est pas valide.";
 };
 
 //message
-if(empty($message)){
+if(empty($message)|| strlen($message > 300)){
 $messageError = "Le message n'est pas valide.";
 } else {
 $messageIsValid = true;
@@ -62,10 +62,10 @@ $addUser->execute([
 
 // send email notification to me
 $to = 'info@anastasiatanczak.com';
-$subject = 'You reveived a new request on your site';
-$message = 'You received a new questions from: ' . $name . ' whose email is: ' . $email . 'and they wrote :' . $message;
+$subject = 'You received a new request on your site';
+$messageMail = 'You received a new question from: ' . $name . ' whose email is: ' . $email . '   and they wrote :' . $message;
 
-mail($to, $subject, $message);
+mail($to, $subject, $messageMail);
 
 include_once("success.php");
 } else {

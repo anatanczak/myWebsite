@@ -2,10 +2,10 @@
 
 
 function connectToDB () {
-    $dbHost =  'localhost';
-    $dbUser = 'anat';
+    $dbHost =  '162.241.224.59';
+    $dbUser = 'anavidev_anat';
     $dbPassword = 'Fuck1921*Blad';
-    $dbname = 'ana_tanc_db';
+    $dbname = 'anavidev_ana_tanc_db';
 
     // Set DSN
     $dsn = 'mysql:host='. $dbHost .';dbname='. $dbname;

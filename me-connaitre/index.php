@@ -9,8 +9,6 @@ if (file_exists('../head.php')) {
 <body class="body-about-me">
   <div class="main-content-wrapper-about-me">
     <div class="section-one-and-navbar-wprapper">
-      <img class="background-desktop-about-me" src="../assets/images/background-desktop-aboutme.jpg" alt="background">
-      <img class="background-about-me-tablet" src="../assets/images/background-aboutme-tablet.jpg" alt="background">
       <?php if (file_exists('../header.php')) {
         include_once '../header.php';
       } ?>

@@ -16,7 +16,7 @@ if (file_exists('../head.php')) {
         <img class="contact-background-img-mobile" src="../assets/images/contact-background-mobile.jpg" alt="background image with a phone handset">
 
         <form class="contact-form" action="script.php" method="post">
-            <h2 class="form-title">Une question ? Un renseignement ?</h2>
+            <h2 class="form-title">Une question ?</h2>
             <p class="error-message"> <?php if (isset($nameError)) {echo $nameError;} ?></p>
             <input class="form-input form-input-small" type="text" name="name" placeholder="Nom et prénom*" value="<?php if (isset($name)) {echo $name;} ?>" required>
             <p class="error-message"> <?php if (isset($emailError)) {echo $emailError;} ?></p>

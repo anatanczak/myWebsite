@@ -1,9 +1,9 @@
 <?php
 
-declare(strict_types=1);
 
 
 
+// TODO: DELTE THIS FUNCTION IF IT"S NOT USED
 
 function getLinkOfCurrentPage(){
     if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
@@ -24,7 +24,7 @@ function getNameOfCurrentPage(){
     return $curPageName;
 }
 
-function setTitleForPage(string $named){
+function setTitleForPage($named){
     switch ($named) {
         case "portfolio":
             return "Portfolio";
@@ -41,23 +41,9 @@ function setTitleForPage(string $named){
     }
 }
 
-function sanitizeInputFromString(string $stringToSanitize){
+function sanitizeInputFromString($stringToSanitize){
     $outputString = filter_var($stringToSanitize, FILTER_SANITIZE_STRING);
     $outputString = trim($outputString);
     $outputString = htmlspecialchars($outputString);
     return $outputString;
-}
-
-// insertIntoDB functions
-
-function insertValuesInDB(string $name, string $email, string $message) {
-$db = connectToDB ();
-// prepared statement
-$addNewUserQuery = "INSERT INTO users (user_name, user_email, user_message) VALUES (:userName, :useEmail, :userMessage)";
-$addUser = $db->prepare($addNewUserQuery);
-$addUser->execute([
-'userName' => $name, 
-'useEmail' => $email,
-'userMessage' => $message
-]);
 }

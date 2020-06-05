@@ -24,18 +24,19 @@ if (file_exists('../head.php')) {
             <div class="text-and-title-meslistes-wrapper">
                 <h2 class="portfolio-title-h2">MESLISTES<span class="colored-dot-for-titles">.</span></h2>
                 <p class="portfolio-p  meslistes-p">
-                    MESLISTES c’est plus qu'une simple to-do list, c’est une application indispensable pour ceux qui ont du mal à rester organisés. On peut y créer plusieurs listes : les courses, les choses à faire, les films à regarder, les lieux à visiter ou encore les choses à ne pas oublier quand on part en voyage. Vous pouvez également prendre des photos d’objets et les ajouter à votre liste.
-                    Il n’est pas nécessaire d'être un pro du smartphone pour utiliser cette application, elle très intuitive et facile à utiliser.</p>
+                    MESLISTES est plus qu'une simple to-do list, c’est une application indispensable pour celles et ceux qui ont du mal à rester organisés. On peut y créer plusieurs listes : les courses, les choses à faire, les films à regarder, les lieux à visiter ou encore les choses à ne pas oublier quand on part en voyage. On peut également prendre des photos d’objets et les ajouter à sa liste.
+                    Il n’est pas nécessaire d'être un pro du smartphone pour utiliser cette application, elle très intuitive et facile à utiliser.
+                </p>
                 <p class="portfolio-p  meslistes-p">J’ai créé cette application avec Swift, le langage natif de la programmation iOS.</p>
                 <p class="portfolio-p  meslistes-p">Vous pouvez télécharger cette application gratuitement sur l‘App Store.</p>
             </div>
             <div class="meslistes-img-darkmode-wrapper">
-                <img class="meslistes-img-darkmode-deskt" src="../assets/images/meslistes-img-dm.jpg">
-                <img class="meslistes-img-darkmode-tablet" srcset="../assets/images/meslistes-img-dm-tablet.jpg">
+                <img class="meslistes-img-darkmode-deskt" src="../assets/images/meslistes-img-dm.jpg" alt="image of the app meslistes">
+                <img class="meslistes-img-darkmode-tablet" src="../assets/images/meslistes-img-dm-tablet.jpg" alt="image of the app meslistes">
                 <img class="meslistes-img-darkmode-mobile" src="../assets/images/meslistes-img-dm-mobile.jpg" alt="image of the app meslistes">
             </div>
             <div class="meslistes-video-wrapper">
-                <video class="meslistes-video" controls>
+                <video class="meslistes-video" poster= "../assets/images/video-poster.jpg" controls>
                     <source src="../assets/videos/meslistes-video-dm.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -57,7 +58,10 @@ if (file_exists('../head.php')) {
 
         <section class="landing-page">
             <h2 class="portfolio-title-h2 portfolio-title-h2-landing-page">Blue Snail Landing Page<span class="colored-dot-for-titles">.</span></h2>
-            <p class="portfolio-p portfolio-p-landing-page">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius ultricies metus, ac semper nulla iaculis non. In hac habitasse platea dictumst. Ut facilisis blandit interdum. Curabitur tempor urna vitae sapien luctus, vitae vulputate quam porttitor. Nulla venenatis arcu malesuada, euismod urna vitae, tristique mauris. Etiam ante nunc, scelerisque nec turpis sit amet, mollis blandit mi. In hac habitasse platea dictumst. Nam et efficitur risus. Curabitur vitae semper quam. Aenean id hendrerit augue. Curabitur dignissim varius eros finibus eleifend. Proin id pellentesque mauris, non posuere ligula. <a class="landing-page-link" href="https://bluesnailapp.com/landingpage/">Voir Blue Snail Landing Page <img class="landing-page-link-icon" src="../assets/images/link-icon-orange.svg" alt=""> </a> </p>
+            <p class="portfolio-p portfolio-p-landing-page">Blue Snail Landing Page est une page de renvoi que j’ai créée pour ma future application Blue Snail. Elle a pour but d'inscrire les internautes intéressés sur la mailing liste afin de pouvoir les informer dès que l’application est disponible.</p>
+
+            <p class="portfolio-p portfolio-p-landing-page">Cette page, ainsi que ce site internet, sont totalement responsives. J’ai codé les deux sans intégrer ni framework ni bibliothèque externe, car j’ai voulu relever un défi : utiliser CSS pur et rendre la page responsive grâce aux flexbox.
+                <a class="landing-page-link" href="https://bluesnailapp.com/landingpage/">Voir Blue Snail Landing Page <span class="link-icon-span-portfolio">&rArr; </span> </a></p>
             <img class="landing-page-img-desktop" src="../assets/images/landing-page-desktop.jpg" alt="photo of Blue Snail landing page">
             <img class="landing-page-img-mobile" src="../assets/images/landing-page-mobile.jpg" alt="photo of Blue Snail landing page">
         </section>
@@ -88,6 +92,8 @@ if (file_exists('../head.php')) {
 
         </section>
 
-        <?php if (file_exists('../footer.php')) {
-            include_once '../footer.php';
-        } ?>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
