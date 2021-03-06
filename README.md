@@ -2,7 +2,7 @@
 
 **Page d'accueil :**
 
-![Screenshot: home](home.png)
+![Screenshot: homepage](homepage.png)
 
 **Page me conaître :**
 
