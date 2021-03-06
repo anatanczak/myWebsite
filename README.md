@@ -1,5 +1,11 @@
 # myWebsite
 
+**Description :**
+L’ancienne version de mon site portfolio, créé au début de ma formation Concepteur Développeur d’Applications. Le projet n’est plus actif car il est remplacé par une nouvelle version complètement repensée, conçue avec d’autres technologies et un autre design.
+
+**Technologies utilisées :**
+HTML, CSS, PHP
+
 **Page d'accueil :**
 
 ![Screenshot: homepage](homepage.png)
