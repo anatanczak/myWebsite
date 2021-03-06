@@ -2,7 +2,7 @@
 
 **Page d'accueil :**
 
-![Screenshot: homepage](home.png)
+
 
 **Page me conaître :**
 
@@ -11,7 +11,7 @@
 **Page portfolio :**
 
 ![Screenshot: portfolio](portfolio1.png)
-![Screenshot: portfolio](portfolio2.png)
+
 ![Screenshot: portfolio](portfolio3.png)
 
 **Page contact :**
